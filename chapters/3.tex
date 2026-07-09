@@ -1,0 +1,1164 @@
+\chapter{The Japanese DP} \label{theoreticalassumptions}
+
+In this chapter, I present in detail the two theoretical contributions of this book. I start out with the structure of the DP. This structure, which I assume to be universal, is in line with the assumptions in Cartography outlined in the preceding chapter, but enriched with the Japanese data. It is not only better suited for handling this data, but also makes important predictions for the structure of the DP, abandoning the strict connection between direct modification and rigid modifier order. I start with an overview over the complex split-DP structure and the three relevant areas. I then briefly go over each relevant area in a bottom-up fashion. Since both the direct and indirect domain, the main topics of this study, will each receive detailed explanations in the following two chapters, the discussion on these areas will be kept comparatively short here, but I spend some more time on the DP-external domain, i.e. the left periphery.
+
+The second part of this chapter is dedicated to the internal structure of modifiers, with a special focus on the monomoraic elements co-occurring with non-verbal modifiers, especially \textsc{no}. I will put forth an account of these elements as syntactic heads in the spirit of \citet{rubin:1993:category, rubin:1994:mod, rubin:1996:transparent}, which license modifiers in attributive position. I thereby introduce an additional functional head in the internal structure of modifiers, informing our knowledge of the DP as a whole. I argue that all kinds of modifiers are licensed by this head, irrespective of word class and modification status, but discuss some difficult cases of CPs with overt tense heads where \textsc{mod} is covert.
+
+\section{The structure of the Japanese DP} \label{japanesedp}
+
+I adopt the basic cartographic assumptions of a universal spine within the clause and the DP, in which the hierarchically final element is the lexical head, i.e. N or V. This head can be subject to phrasal movement, but only to the left, never to the right \citep{kayne:1994:anti, cinque:2005:deriving, cinque:2023:linearization}, although, as shown in Section \Ref{sectioncarto}, in Japanese, and potentially other strictly head-final languages, movement of the lexical head does not occur. Rather, certain modifiers can move to a higher position, especially the DP-external domain, individually, as also argued elsewhere (cf. \citealt{kim:2019:syntax, laenzlinger:2005:french, laenzlinger:2011:elements}). The extended projection of both lexical heads contains a (potentially) infinite number of functional projections, that serve as merging and landing sites for various types of modifiers.
+
+Furthermore, I assume the DP to be split, paralleling accounts on the split-CP \citep{rizzi:1997:the, grohmann:2003:prolific, laenzlinger:2011:elements}, into two large domains: The DP-external domain, essentially the \is{left periphery}left periphery of the DP, and the DP-internal domain \citep{kiss:1998:identificational, kiss:2007:topic, giusti:1996:is, dimitrova:1998:fragments, ihsane:2001:specific, aboh:2004:topic, aboh:2006:when, laenzlinger:2005:french, kim:2019:syntax}. The DP-internal domain is made up of two subdomains: The indirect and the direct domain.\footnote{Note that the tripartite divide I assume to hold for the DP does not coincide with the tripartite structure of other authors \citep{laenzlinger:2011:elements, grohmann:2003:prolific} who assume a divide into an agreement and a theta domain for the lower part.}
+
+The complete structure of the Japanese DP is given in \figref{fig:Structure of the Japanese DP2} with the left part of the tree representing the DP-external domain and the right part the DP-internal domain, which starts where the DP-external domain ends. The thresholds between the three domains are marked in boldface. Recall that I indicate the indefinite head d as the threshold between the direct and the indirect domain following \citet{cinque:2010:adj, cinque:2020:relcl}, but that this head does not play a major syntactic role in my system since I do not assume the double-headed structure for relative clauses (see Section \ref{dP}).
+
+\begin{figure}
+
+ \begin{subfigure}{0.5\textwidth}
+
+ \begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=30pt, sibling distance=-5pt}
+ \Tree [.DP\textsubscript{external} {} [.D′\textsubscript{external} [.FP\textsubscript{\textsc{quantity}} XP [.F′\textsubscript{\textsc{quantity}} [.FocP XP [.Foc′ [.FP\textsubscript{n} XP [.F′\textsubscript{n} [.FP\textsubscript{n+1} XP [.F′\textsubscript{n+1} [.\textbf{DP\textsubscript{internal}} {} ... ] F ] ] F ] ] Foc ] ] F ] ] D ]]
+\end{tikzpicture}
+ \end{subfigure}%
+ \begin{subfigure}{0.5\textwidth}
+
+ \begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=30pt, sibling distance=-5pt}
+ \Tree [.\textbf{DP\textsubscript{internal}} {} [.D′\textsubscript{internal} [.FP\textsubscript{indirect-n} CP [.F′\textsubscript{indirect-n} [.FP\textsubscript{Num} NumP [.F′\textsubscript{Num} [.FP\textsubscript{indirect-n+1} CP [.F′\textsubscript{indirect-n+1} [.\textbf{dP} [.FP\textsubscript{direct-n} XP [.F′\textsubscript{direct-n} [.FP\textsubscript{direct-n+1} XP [.F′\textsubscript{direct-n} [.$\sqrt{}$P XP [.$\sqrt{}$′ \edge[roof]; {N} ] ] F ] ] F ] ] d ] F ] ] F ] ] F ] ] D ] ]
+\end{tikzpicture}
+ \end{subfigure}
+ \caption{Structure of the Japanese DP}
+ \label{fig:Structure of the Japanese DP2}
+\end{figure}
+
+
+I make the following specific assumptions and predictions for the functional inventory of the three relevant areas. \is{left periphery}
+
+\ex. \a. \textit{The DP-external domain}, i.e. the left periphery, includes functional projections that host the following elements: A projection for quantifiers, which most probably move there from the direct domain, projections for non-restrictive relative clauses, which merge in the left periphery outside the scope of D, and a projection for focused modifiers, which can optionally move there but are not required to. Furthermore, the left periphery contains an unspecified number of available functional projections for direct as well as restrictive indirect modifiers which optionally move there out of their respective domains. Those unspecific projections are labeled FP\textsubscript{n}, FP\textsubscript{n+1}, in order to highlight structural hierarchy.
+\b. \textit{The indirect domain} is situated higher than the direct domain within the DP-internal domain. It contains (a potentially infinite number of) functional projections dedicated to indirect modifiers, but those are not differentiated based on different types of indirect modifiers, i.e. full and reduced relative clauses. The indirect domain furthermore encompasses a dedicated projection for numerals and functional projections reserved for indirect modifiers precede and follow this projection.
+\c. \textit{The direct domain} is situated below the indirect domain within the DP-internal domain. It contains (a potentially infinite number of) functional projections hosting direct modifiers. Those projections are not dedicated to modifiers of specific semantic categories. Instead, they are unspecific. Again, structural hierarchy is indicated via the labels FP\textsubscript{n}, FP\textsubscript{n+1}, etc., but this hierarchy only becomes relevant in cases where scope restrictions play a role. The only dedicated functional projection within the direct domain is reserved for idiomatic modifiers, immediately at the root of the noun.
+
+\subsection{Internal DP: Direct domain} \label{internaldirect}
+
+The direct domain is situated below the indirect domain within the DP-internal domain, making it the lowest area inside the DP, directly above the noun. In \figref{fig:Structure of the Direct Domain in Japanese1}, only the internal DP is displayed and the direct domain is circled.
+
+\begin{figure}
+
+ \begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=30pt, sibling distance=-5pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [. \node (indirect1) {FP\textsubscript{indirect-n}}; CP [.\node (indirect0) {F′\textsubscript{indirect-n}}; [.FP\textsubscript{Num} NumP [.F′\textsubscript{Num} [.FP\textsubscript{indirect-n+1} \node (indirect3) {CP}; [. \node (indirect2) {F′\textsubscript{indirect-n+1}}; [.dP [. \node (direct2) {FP\textsubscript{direct-n}}; XP [. \node (direct0) {F′\textsubscript{direct-n}}; [.FP\textsubscript{direct-n+1} XP [.F′\textsubscript{direct-n+1} [.$\sqrt{}$P \node (direct1) {XP}; [.$\sqrt{}$′ \edge[roof]; N ] ] F ] ] F ] ] d ] F ] ] F ] ] F ] ] D ] ]
+ \node[draw,circle,fit= (direct1) (direct2) ] [color=blue] {};
+\end{tikzpicture}
+
+ \caption{Structure of the direct domain in Japanese}
+ \label{fig:Structure of the Direct Domain in Japanese1}
+\end{figure}
+
+In order to motivate a domain for direct modifiers, it needs to be proven that direct modification does exist in Japanese. As already mentioned in the preceding chapters, Japanese posseses the equivalents of non-predicative, that is direct-only, \is{non-intersective modifier}non-intersective \ref{intersectivechap3} and \is{relational modifier}relational modifiers \ref{relationalchap3} \citep{yamakido:2005:nature, ayano:2010:revisiting, nagano:2016:are, watanabe:2017:attributive}.\footnote{Again, I abstract away from possible predicative use of these modifiers in contrastive and elliptical constructions or contexts in which the copula is a placeholder. See Section \Ref{test predication}.}
+
+\ex. \label{intersectivechap3} \ag. Tarō-ga shōrai-no purosakkāsenshu-da.\\
+Taro-\textsc{nom} future-\textsc{no} pro.soccer.player-\textsc{cop}\\
+`Taro is a future professional soccer player.’
+\bg. *Ano purosakkāsenshu-ga shōrai-da.\\
+that pro.soccer.player-\textsc{nom} future-\textsc{cop}\\
+(`That professional soccer player is future.’)
+
+\ex. \label{relationalchap3} \ag. Denmāku-no / chīku-no isu\\
+Denmark-\textsc{no} / teak-\textsc{no} chair\\
+`Danish / teak chair'
+\bg. *Ano isu-wa Denmāku-da / chīku-da.\\
+that chair-\textsc{top} Danish-\textsc{cop} / teak-\textsc{cop}\\
+(`That chair is Danish / teak.’)
+
+Next, building on the observation of other authors, for instance \citet{cinque:2010:adj} on Germanic (English) and Romance (Italian), the indirect domain is situated above the direct domain in Japanese as well. \ref{directrcchap3} exemplifies this, showing that the \is{non-intersective modifier}(non-intersective) direct-only modifier \textit{shōrai-no} `future’ must be closer to the head noun than the fairly complex relative clause. The other order is significantly degraded. 
+
+\ex. \label{directrcchap3} \ag. Kare-wa [ōku-no kurabu-ga chūmoku-shi-te-i-ru\textsubscript{RC} [\textbf{shōrai-no} purosakkāsenshu]]-desu.\\
+he-\textsc{top} numerous-\textsc{no} club-\textsc{nom} pay.attention-do-\textsc{ger}-be-\textsc{prs} future-\textsc{no} pro.soccer.player-\textsc{cop.pol}\\
+`He is a future professional soccer player whom many clubs pay attention to.’
+\bg. *Kare-wa [\textbf{shōrai-no} [ōku-no kurabu-ga chūmoku-shi-te-i-ru\textsubscript{RC} purosakkāsenshu]]-desu.\\
+\textsc{top} future-\textsc{no} numerous-\textsc{no} club-\textsc{nom} pay.attention-do-\textsc{ger}-be-\textsc{prs} pro.soccer.player-\textsc{cop.pol}\\
+
+As a crucial point of derivation from most cartographic accounts, the direct domain introduced here does not encompass functional projections dedicated to modifiers of specific semantic categories. Instead, it encompasses a possibly infinite number of unspecific functional projections. This accounts neatly for cases of \is{absence of ordering restrictions}free ordering among (also in English) ambiguous qualitative modifiers, for instance of \textsc{dimension} or \textsc{color} given in \ref{dimensioncolor}. Crucially, it offers an explanation for the lack of ordering restrictions between direct-only modifiers, for example, the two \is{relational modifier}relational modifiers \textit{Denmāku-no} `Denmark, Danish’ and \textit{chīku-no} `teak’ given in \ref{nationality}.
+
+\ex. \textsc{dimension} vs \textsc{color} \label{dimensioncolor}
+\ag. ōki-i aka-i hon\\
+big-\textsc{i} red-\textsc{i} book\\
+`big red book’
+\bg. aka-i ōki-i hon\\
+red-\textsc{i} big-\textsc{i} book\\
+`red big book’
+
+\ex. \textsc{nationality} vs. \textsc{material} \label{nationality}
+\ag. Denmāku-no chīku-no isu\\
+Denmark-\textsc{no} teak-\textsc{no} chair\\
+`Danish teak chair' \label{denmakuneu}
+\bg. chīku-no Denmāku-no isu\\
+teak-\textsc{no} Denmark-\textsc{no} chair\\
+`teak Danish chair'
+
+As I will show at length in the next chapter, Japanese modifiers also fail to exhibit \is{absence of ordering restrictions}ordering restrictions based on different levels of gradability and intersectivity, contrary to what is claimed in \citet{svenonius:2008:position, manzini:2025:left}, and neither syntax-external factors such as phonological/prosodic length nor word class seem to play a role. This was already shown in \ref{dimensioncolor}, but is illustrated more clearly in the pair in \ref{quality}: The non-gradable, intersective modifier of \textsc{nationality} \textit{Chūgoku-no} `China, Chinese' and the gradable subsective \textit{na}-adjective of \textsc{quality} \textit{kirei-na} `beautiful’ are fine in either order. Importantly, \textit{kirei-na} is not a direct-only modifier, but actually ambiguous and, thus, could be situated in the indirect domain. However, then it would still be merged higher. In either case, it would not occur to the right of the direct-only \textsc{nationality} modifier.
+
+\ex. \textsc{quality} vs. \textsc{nationality} \label{quality}
+\ag. kirei-na Chūgoku-no kabin\\
+beautiful-\textsc{na} China-\textsc{no} vase\\
+`beautiful Chinese vase'
+\bg. Chūgoku-no kirei-na kabin\\
+China-\textsc{no} beautiful-\textsc{na} vase\\
+`Chinese beautiful vase'
+
+A significant consequence of the theory, and one point I hope to make clear in this book, is that ordering restrictions lose their status as a prerequisite for direct modification and the two issues, type of modification, direct or indirect, and ordering, become two orthogonal issues.
+
+Crucially, Japanese differs from languages such as \is{English} English which do exhibit ordering restrictions based on semantic categories within the direct domain. I argue that the reason for this lies in parametric variation, to be discussed in Section \ref{units of language}. Specifically, the DP-spine is universal, but there is language-specific variation as to whether functional projections based on fine-grained semantic categories are activated or not \citep{ramchand:2014:deriving, wiltschko:2014:universal}. In other words, some languages possess language-specific entities to form functional projections of \textsc{dimension}, \textsc{color} and so on, but others do not. These language-specific entities correspond to the concept of \is{Units of Language}\textit{Units of Language} given in \citet[1]{wiltschko:2014:universal}.
+
+To recapitulate, ordering across two different domains is (rather) strict across languages, including Japanese, which gives evidence for a universal DP-structure incorporating a direct and a higher indirect domain (see also \citealt{ramchand:2014:deriving} and \citealt{wurmbrand:2023:ich} for this idea, mostly with regard to the clause). However, this is not the case within one domain and this is the source of cross-linguistic differences.
+
+In Japanese, the two possible variants of linear order between two modifiers are simply a result of merge order. The modifier that is merged subsequent to the noun will appear closer to the noun in linear order. On the other hand, the canonical word order of two (or more) adjectives of different semantic categories in English (and similar languages) is pre-determined in the syntax, given they are both direct.
+
+A reviewer raises the issue of how we can determine whether a modifier is direct or indirect to begin with. The simple answer is: In most cases, we cannot. However, this is not a problem specific to the account proposed here. As illustrated in Section \ref{cartography Cinque}, and specifically Section \ref{ambiguities}, most modifiers (adjectives) in \is{English} English are ambiguous as well and it is precisely their behavior in DPs with more than one modifier that can give an indication of their modification status. But this option is not operationalizable in Japanese. We can only prove that a modifier is direct in Japanese by observing its behavior in predicative structures, alongside the other characteristics explained thoroughly in Section \ref{testsdirect}. On the contrary, clear cases of indirect modifiers in Japanese exhibit complex morphosyntactic structures, i.e. inflection for past or co-occurrence with the canonical copula.
+
+Nominal modifiers in Japanese are therefore licensed by functional projections within the extended noun phrase, which this language shares with other languages. However, it is only direct-only modifiers that are exclusively licensed within the direct domain. And only clearly indirect modifiers are licensed within the indirect domain. For all other modifiers, there is no \textit{a priori} indication as to their modification status and they could be licensed by both types of functional heads. The system here is thus more versatile, compared to standard cartographic accounts. But this versatility is necessary in order to incorporate direct(-only) modifiers in the system, while still acknowledging their \is{absence of ordering restrictions}lack of ordering restrictions among each other.
+
+Before closing this subsection, I will point out two cases of strict ordering observable in the direct domain in Japanese. The first concerns cases that arise when \is{scope}scope and other external factors play a role (see also \citealt{ramchand:2014:deriving} for the clause). This becomes obvious in the following minimal pair of direct-only modifiers. In a context where the speaker is identifying a vase out of a specific collection (for example at a museum), namely the single German one, \textit{yui'itsu-no} `only’ must take scope over both the following modifier and the noun, thus over the chunk \textit{Doitsu-no kabin} `German vase’, and not just over \textit{kabin} `vase’. In the same context, the reverse order is odd, and can only mean something akin to `the only vase in Germany' or `the only vase produced in Germany' where the part \textit{German} or \textit{in Germany} constitutes an additional piece of information (Ken Hiraiwa p.c.).\footnote{A factor involved here might be the nominal status of \textit{Doitsu} `German(y)’. There are similar cases reported in \citet{shimamura:2014:go}.
+
+\par
+
+\ex. \ag. tsumeta-i me-no kusuri\\
+cool-\textsc{i} eye-\textsc{no} medicine\\
+`cool eye medicine’
+\bg. *me-no tsumeta-i kusuri\\
+eye-\textsc{no} cool-\textsc{i} medicine \null \hfill \citep[163]{shimamura:2014:go}\\
+
+\par
+
+The noun \textit{me} `eye’ modifies the noun \textit{kusuri} first before the adjective takes scope over the whole chunk. The other order is very hard to interpret.}
+
+\ex. \label{yuiitsuchap3} \ag. [yui'itsu-no [Doitsu-no kabin]]\\
+only-\textsc{no} German-\textsc{no} vase\\
+`only German vase'
+\bg. ??Doitsu-no yui'itsu-no kabin\\
+German-\textsc{no} only-\textsc{no} vase\\
+
+In cases such as \ref{yuiitsuchap3}, the modifiers occupy distinct positions and merge must have occurred in a specific order. See Section \ref{discussiondirect} for discussion.\footnote{This is also a good argument against scrambling as an alternative hypothesis. If scrambling was always an option, it is questionable why it is not possible when scope is involved. I am grateful to Johannes Mursell for discussion.}
+
+The only type of modifiers with a fixed position inside the direct domain are \is{idiomatic modifier}\textit{idiomatic} modifiers, or more precisely modifiers appearing in \textit{non-free phrases} (see \citealt{kohlich:2024:nonfree}). Such modifiers must appear linearly adjacent to the noun. As illustrated below, the direct-only modifier \textit{kōki-no} `curious' and the following noun form the idiomatic expression \textit{kōki-no manazashi} (alternatively \textit{kōki-no me/shisen}) `curious gaze' and no other modifier can intervene.\footnote{This is not due to the behavior of \textit{minna-no} `everyone's' as presented in the relevant discussion in Section \ref{idiomatic}.}
+
+\ex. \ag. minna-no kōki-no manazashi\\
+everyone-\textsc{no} curious-\textsc{no} gaze\\
+`everyone's curious gaze'
+\bg. *kōki-no minna-no manazashi\\
+curious-\textsc{no} everyone-\textsc{no} gaze\\
+
+\newpage
+\citet{svenonius:2008:position} discusses such cases and assumes that idiomatic modifiers are embedded below the nP level. He adopts the idea of category-less root phrases $\sqrt{}$P from \citet{marantz:1997:no}, which receive their category from NP and in whose specifier the \is{idiomatic modifier}idiomatic modifiers are merged. This is displayed in \figref{Structure idiomatic modifiers}. Note that the root phrase could also be given as NP here (cf. \citealt[37]{svenonius:2008:position}). In the following, I will treat such root phrases as a dedicated functional projection for idiomatic modifiers. This means that in the larger trees representing the complete structure of the Japanese DP, I will display $\sqrt{}$P as immediately c-commanding NP. There, I will also omit the nP-level.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{indirect} {} [.F′\textsubscript{indirect} [.dP [.FP\textsubscript{direct} {} [.F′\textsubscript{direct} [.nP [.$\sqrt{}$P [.XP\textsubscript{idiomatic} \edge[roof]; kōki-no ] [.$\sqrt{}$′ \edge[roof]; manazashi ] ] n ] F ] ] d ] F ] ] D ] ]
+ \end{tikzpicture}
+\caption{Structure of idiomatic modifiers exemplified with \textit{kōki-no manazashi} `curious gaze'}
+\label{Structure idiomatic modifiers}
+\end{figure}
+
+In Chapter \ref{direct japanese}, I will present the criteria according to which direct modifiers were identified, then outline each group of direct modifiers in Japanese, and finally, discuss the connection of the universal spine and language-specific categories also in the cross-linguistic dimension.
+
+
+\subsection{Internal DP: Indirect domain}
+
+The indirect domain, the topic of Chapter \ref{indirect japanese}, is highlighted inside the DP-internal domain in \figref{fig:Structure of the Indirect Domain in Japanese1}.
+
+\begin{figure}
+
+
+ \begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=30pt, sibling distance=-5pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [. \node (indirect1) {FP\textsubscript{indirect-n}}; CP [.\node (indirect0) {F′\textsubscript{indirect-n}}; [.FP\textsubscript{Num} NumP [.F′\textsubscript{Num} [.FP\textsubscript{indirect-n+1} \node (indirect3) {CP}; [. \node (indirect2) {F′\textsubscript{indirect-n+1}}; [.dP [.FP\textsubscript{direct-n} XP [.F′\textsubscript{direct-n} [.FP\textsubscript{direct-n+1} XP [.F′\textsubscript{direct-n+1} [.$\sqrt{}$P XP [.$\sqrt{}$′ \edge[roof]; N ] ] F ] ] F ] ] d ] F ] ] F ] ] F ] ] D ] ]
+ \node[draw,circle,fit= (indirect0) (indirect3) ] [color=blue] {};
+\end{tikzpicture}
+
+ \caption{Structure of the indirect domain in Japanese}
+ \label{fig:Structure of the Indirect Domain in Japanese1}
+\end{figure}
+
+
+The indirect domain is structurally higher than the direct domain and contains a projection for \is{numeral}numerals. Japanese provides further evidence for this as direct-only modifiers are generally disallowed from a position to the left of numerals, as also argued in \citet{ayano:2010:revisiting} and \citet{watanabe:2017:attributive}, highlighting that numerals are situated within the indirect domain.
+
+\ex. \ag. San-nin-no furu-i yūjin-ga ki-ta.\\
+three-\textsc{cl-no} long.time-\textsc{i} friend-\textsc{nom} come-\textsc{pst}\\
+`Three long-time friends came.' \hfill \citep[106]{ayano:2010:revisiting}
+\bg. *Furu-i san-nin-no yūjin-ga ki-ta.\\
+long.time-\textsc{i} three-\textsc{cl-no} friend-\textsc{nom} come-\textsc{pst}\\
+
+Furthermore, there is no evidence that Japanese head-external relative clauses do come in different sizes, for instance full and reduced, or CP and IP/vP (see Section \ref{size,indirect}). Instead, they are unequivocally CPs. That means that, parallel to the situation in the direct domain, there are no dedicated functional projections for indirect modifiers in the indirect domain either, in this case based on different sizes. This correctly predicts that relative clauses can freely occur to the left or to the right of numerals in linear order. As confirmed through speaker’s judgment for \ref{patichapter2}, in out-of-the-blue contexts, both orders of relative clause and numeral are equally possible.
+
+\ex. \label{patichapter2} \ag. [pātī-de at-ta [futari-no josei]]\\
+party-\textsc{loc} meet-\textsc{pst} two-\textsc{no} woman \label{pati1}\\
+\bg. [futari-no [pātī-de at-ta josei]]\\
+two-\textsc{no} party-\textsc{loc} meet-\textsc{pst} woman\\
+`the two women who I met at a party' \label{pati2}
+
+Corpus data and speaker \is{complexity}judgments of diverse examples reported in Section \ref{complexity} confirm this observation and the assumption that available projections are situated above and below the projection hosting numerals, which do not correlate with the structural size of relative clauses.
+
+Hence, the two orders in \Ref{patichapter2} are attributable to two different positions the relative clause can occupy, the specifier of a functional projection above or below FP\textsubscript{Num}. I indicate this optionality in \figref{Relative clauses above and below numerals} via the gray font.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{indirect} [.CP \edge[roof]; {\textcolor{mygray}{pātī-de at-ta}} ] [.F′\textsubscript{indirect} [.FP\textsubscript{Num} [.NumP \edge[roof]; {futari-no} ] [.F′\textsubscript{Num} [.FP\textsubscript{indirect} [.CP \edge[roof]; {\textcolor{mygray}{pātī-de at-ta}} ] [.F′\textsubscript{indirect} [.... [.NP \edge[roof]; {josei} ] {} ] F ] ] F ] ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Different position of relative clauses in relation to numerals}
+\label{Relative clauses above and below numerals}
+\end{figure}
+
+There is a syntax-external factor that influences the choice of speakers to place the relative clause in a specific position, namely to the left of the \is{numeral}numeral, showing that their position is not entirely arbitrary. This factor is \is{complexity}\textit{complexity}, understood in this book both syntactically and prosodically. Syntactic complexity reflects the amount of syntactic material. Prosodic complexity, descriptively speaking, reflects length (\citealt{hawkins:2007:efficiency}; see Section \ref{complexity}). An increase in complexity can be achieved, for example, when the verbal or adjectival predicate within a relative clause co-occurs with an overt subject argument, or when it is modified by a degree adverb.
+
+That an increase in \is{complexity}complexity causes relative clauses to be preferred in a position to the left of numerals is illustrated in the DP in \ref{doresuutsukushikattachap3}, which contains a numeral and a relative clause. This relative clause is adjectival in nature and exhibits an overt subject. Furthermore, the adjective is inflected for past. Most speakers I consulted clearly prefer the position of the relative clause to the left of the numeral over the reversed order. There is certain diversity in speaker judgments, although speakers either accept both orders or prefer the one with the relative clause on the left. The dispreferred order, with lower naturalness according to speakers, is indicated with the symbol `\#’.
+
+\ex. \label{doresuutsukushikattachap3} \ag. [doresu-ga utsukushi-k-at-ta [futari-no josei]]\\
+dress-\textsc{nom} beautiful-\textsc{pred-cop-pst} two-\textsc{no} woman \label{doresu1}\\
+\bg. \#[futari-no [doresu-ga utsukushi-k-at-ta josei]]\\
+two-\textsc{no} dress-\textsc{nom} beautiful-\textsc{pred-cop-pst} woman\\
+`the two women whose dresses were beautiful'
+
+This fact is thus suggestive of movement of the relative clause from a functional projection below FP\textsubscript{Num} to a projection above in an individual fashion as depicted in \figref{Derivation doresu-ga utsukushi-katta futari-no josei}.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{indirect} [.CP \edge[roof]; \node (cp1) {doresu-ga utsukushi-katta}; ] [.F′\textsubscript{indirect} [.FP\textsubscript{Num} [.NumP \edge[roof]; {futari-no} ] [.F′\textsubscript{Num} [.FP\textsubscript{indirect} \node (cp2) {$<$CP$>$}; [.F′\textsubscript{indirect} [.... [.NP \edge[roof]; {josei} ] {} ] F ] ] F ] ] F ] ] D ] ]
+\draw [color=blue][->] (cp2) |- +(0,-2) -| (cp1);
+\end{tikzpicture}
+\caption{Derivation of \ref{doresu1}}
+\label{Derivation doresu-ga utsukushi-katta futari-no josei}
+\end{figure}
+
+Keeping the system simple and consistent, I assume that all (but only restrictive, see Section \ref{RC LP}) relative clauses in Japanese merge in a position below \is{numeral}numerals, but can potentially move up to a position above, or also to the left periphery (see below). This assumption predicts that such movement operations are open potentially to all relative clauses \citep{kim:2019:syntax}. The more complex a relative clause is, the more likely it is to move to a higher position. This point is illustrated with more data and further discussed in Section \ref{complexity}, especially in Section \ref{RC discussion} (and see Footnote \ref{footnote complexity}), where I outline why it fares better than its alternatives.
+
+\subsection{The left periphery} \label{externaldp}
+
+The DP-external domain, also referred to as the \is{left periphery}left periphery, is not the main focus of this study, but will be investigated briefly here since Japanese provides evidence for this domain. Notably, this area is postulated and investigated with regard to several languages in the works of \citet{giusti:1996:is, dimitrova:1998:fragments, ihsane:2001:specific, aboh:2004:topic, aboh:2006:when, roca:2009:left, bastos:2011:info, giusti:2016:latin, roehrs:2019:left, roehrs:2025:DP, kim:2019:syntax}; for the integration in formal frameworks see \citet{laenzlinger:2011:elements} and \citet{grohmann:2003:prolific}. I will discuss every type of modifier attested in this area in Japanese and argue that there are many insights and incentives for future research regarding this peripheral area to be gained by looking at this language.
+
+\subsubsection{Demonstratives}
+
+Japanese lacks articles, but has demonstratives. They can be simple, the standard ones being \textit{kono} `this’ and its counterparts, which only vary in deixis – and complex, such as \textit{koko-no} `the (one) here’ or \textit{korekara-no} `the one from now on’. I adopt the standard assumption of demonstratives as maximal projections \citep{laenzlinger:2005:french, laenzlinger:2011:elements, kim:2019:syntax}, but in Japanese, they are specifiers, not heads \citep{kuno:1973:structure, kuroda:1992:japanese}. An analysis as heads would violate the strict head-finality of Japanese, since demonstratives never occur postnominally.
+
+Demonstratives first merge as specifiers of the DP projection heading the internal domain. I follow previous authors \citep{laenzlinger:2011:elements, kim:2019:syntax} and assume that they can optionally move to the specifier position of the DP heading the DP-external domain if modifiers have moved to a position in the left periphery. I adopt the simplistic notions DP\textsubscript{internal} for the lower and DP\textsubscript{external} for the higher DP projection, since there is no obvious semantic or pragmatic difference whether demonstratives occur in the lower or higher position.
+
+\subsubsection{Quantificational modifiers} \label{quantificational modifiers}
+
+The DP-external domain contains a projection for quantifiers, or more precisely \is{quantificational modifier}\textit{quantificational modifiers}, which will be labeled FP\textsubscript{\textsc{quantity}}. Most quantificational modifiers in Japanese are \textsc{no}-modifiers, including \textit{takusan-no} `a lot’, \textit{kazukazu-no} `many', \textit{subete-no} `all' and \textit{amari-no} `few' as well as \textit{ōku-no} `many’.\footnote{Quantification can also be expressed via Sino-Japanese prefixes such as \textit{kaku}- `each, every' or \textit{zen}- `all’, which are simply juxtaposed to the head noun. \textit{Bōdai-na} `giant, huge’ is a \textit{na}-adjective. I am grateful to Ken Hiraiwa for reminding me of this.}
+
+Cross-linguistically, \is{left periphery}there is a tendency for \is{quantificational modifier}quantificational modifiers to appear rather high in the DP. In \is{German} German, they have to precede (ambiguous) qualitative \ref{vielestrenge} and also direct adjectives \ref{vielefruhere}. This behavior of German quantifiers is verified in the corpus study reported in \citet[378]{trost:2006:das}, and see also \citet{eichinger:1991:ganz}.
+
+\ex. \label{vielestrenge}
+ \ag. viele strenge Präsidenten (German)\\
+many strict presidents\\
+`many strict presidents’
+\bg. *strenge viele Präsidenten\\
+strict many presidents\\
+
+
+\ex. \label{vielefruhere}
+ \ag. viele frühere Präsidenten (German)\\
+many former presidents\\
+`many former presidents’
+\bg. *frühere viele Präsidenten\\
+former many presidents\\
+
+This generalization partly holds in Japanese: When quantificational modifiers and \is{relational modifier}direct-only \is{non-intersective modifier}modifiers co-occur, the quantifier typically occurs first, the other order being degraded.
+
+\ex. quantificational modifier $\succ$ non-intersective modifier
+\ag. \textbf{ōku-no} shōrai-no purosakkāsenshu\\
+many-\textsc{no} future-\textsc{no} pro.soccer.player\\
+`many future professional soccer players’
+\bg. *shōrai-no \textbf{ōku-no} purosakkāsenshu\\
+future-\textsc{no} many-\textsc{no} pro.soccer.player'\\
+
+\ex. quantificational modifier $\succ$ relational modifier
+\ag. \textbf{takusan-no} komugi-no pan\\
+a.lot-\textsc{no} wheat-\textsc{no} bread\\
+`many wheat(en) (pieces of) bread’ \label{takusankomugi}
+\bg. ??komugi-no \textbf{takusan-no} pan\\
+wheat-\textsc{no} a.lot-\textsc{no} bread\\
+
+Importantly, quantifiers in Japanese do not only readily co-occur with demonstratives and when they do, they can occur before and after them.
+
+\newpage
+
+\ex. \ag. ano \textbf{kazukazu-no} mondai\\
+that many-\textsc{no} problem\\
+\bg. \textbf{kazukazu-no} ano mondai\\
+many-\textsc{no} that problem\\
+`those many problems’
+
+\ex. \ag. ano \textbf{takusan-no} hon\\
+that a.lot-\textsc{no} book\\
+\bg. \textbf{takusan-no} ano hon\\
+a.lot-\textsc{no} that book\\
+`those many books’
+
+This is a significant deviation from, for example, \is{English} English, where \is{quantificational modifier}quantifiers can only co-occur with demonstratives or articles in certain contexts in the first place, for example in \textit{those many students} or \textit{the few students who attended the lecture}, but crucially only in this order, never in the order \textit{quantifier} $\succ$ \textit{demonstrative}.
+
+\ex. *many those students
+
+From this, I conclude that quantificational modifiers in Japanese are generally situated in the \is{left periphery}left periphery. The surface order \textit{demonstrative} $\succ$ \textit{quantifier} is a result of the demonstrative having moved from the internal DP to Spec, DP\textsubscript{external}, similar to what \citet{laenzlinger:2005:french, laenzlinger:2011:elements} argues for French. That this happens regularly in Japanese is corroborated, since speakers still find this order a bit more natural.
+
+The question remains whether quantifiers actually move to the left periphery or base-generate there (cf. \citealt{kim:2019:syntax}). There is good evidence that they originate lower, probably inside the direct domain. Note that many quantificational modifiers in Japanese are exclusively used attributively, while for others this is the prototypical use. In fact, all quantificational modifiers attested in the data set are sorted in group 5, the group for direct modifiers. While some are truly exclusively direct, others, such as \textit{takusan-no} `a lot’, could in principle have a predicative source, but given the ratio of 14:1 towards attributive use (4,048 attributive, 172 predicative occurrences), a categorization as a prototypical attributive modifier is justified (for details see \citealt{kohlich:2023:suppl}). Direct-only quantificational modifiers, those which are impossible as predicates, include \textit{kazukazu-no} `many’, \textit{shuju-no} `various’ and \textit{amata-no} `a lot, many’ as illustrated below.
+
+\ex. \ag. Kare-wa kazukazu-no shō-wo tot-ta.\\
+he-\textsc{top} many-\textsc{no} prize-\textsc{acc} take-\textsc{pst}\\
+`He received many prizes.’
+\bg. *Kare-ga tot-ta shō-wa kazukazu-desu.\\
+he-\textsc{nom} take-\textsc{pst} prize-\textsc{top} many-\textsc{cop.pol}\\
+(`The prizes he received were many.’)
+
+\ex. \ag. Kare-wa shuju-no / amata-no shikaku-wo mot-te-i-ru.\\
+he-\textsc{top} various-\textsc{no} / many-\textsc{no} qualification-\textsc{acc} have-\textsc{ger}-be-\textsc{prs}\\
+`He has various / many qualifications.’
+\bg. *Kare-ga mot-te-i-ru shikaku-wa shuju-desu / amata-desu.\\
+he-\textsc{nom} have-\textsc{ger}-be-\textsc{prs} qualification-\textsc{top} various-\textsc{cop.pol} / many-\textsc{cop.pol}\\
+(`The qualifications he has are various / many.’)
+
+Based on these facts, I conclude that \is{quantificational modifier}quantificational modifiers are base-genera\-ted in the direct domain, but have to move to the \is{left periphery}left periphery. I tentatively assume that this movement happens to check [+quantificational] features, in line with \citet{kim:2019:syntax}, and that they move to a dedicated position, call it FP\textsubscript{\textsc{quantity}}, although more concrete evidence is desirable. The derivation looks as depicted in \figref{Derivation takusan.no komugi-no pani}.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{external} {} [.D′\textsubscript{external} [.FP\textsubscript{\textsc{quantity}} [.XP \edge[roof]; \node (isha1) {takusan-no}; ] [.F′\textsubscript{\textsc{quantity}} [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{indirect} {} [.F′\textsubscript{indirect} [.dP [.FP\textsubscript{direct} \node (isha2) {$<$XP$>$}; [.F′\textsubscript{direct} [.FP\textsubscript{direct} [.XP \edge[roof]; komugi-no ] [.F′\textsubscript{direct} [.NP \edge[roof]; {pan} ] F ] ] F ] ] d ] F ] ] D ] ] F ] ] D ] ]
+\draw [color=blue][->] (isha2) |- +(0,-2) -| (isha1);
+\end{tikzpicture}
+\caption{Derivation of \textit{takusan-no komugi-no pan} `many wheat(en) (pieces of) bread’ (= \ref{takusankomugi})}
+\label{Derivation takusan.no komugi-no pani}
+\end{figure}
+
+\subsubsection{Non-restrictive and restrictive relative clauses} \label{RC LP}
+
+Another argument in favor of a split-DP structure is the fact that a certain class of relative clauses in Japanese obligatorily precedes demonstratives, namely those that are \is{non-restrictive relative clause}non-restrictive. First, note that all relative clauses \textit{can} readily precede demonstratives in Japanese. This means that when no context is provided, a relative clause in this position is ambiguous and can be interpreted non-restrictively or restrictively, as depicted in \ref{resrc}.\footnote{The initial observation goes back to \citet{kamio:1977:restrictive}, who pointed out a paradigmatic difference between non-restrictive pre-demonstrative relative clauses and restrictive post-demonstrative relative clauses. \citet{ishizuka:2008:RC}, whom this section follows, has argued in detail that pre-demonstrative relative clauses are ambiguous.}
+
+\exg. [Sakunen isha-ni nat-ta [sono musuko-ga]] kekkon-shi-ta.\\
+last.year doctor-\textsc{loc} become-\textsc{pst} that son-\textsc{nom} marriage-do-\textsc{pst}\\
+1. $\approx$ `That son who became a doctor last year got married.’ (restrictive) \\
+2. $\approx$ `That son, who happened to become a doctor last year, got married.' (non-restrictive) \\ \null \hfill \citep[4, 5]{ishizuka:2008:RC} \label{resrc}
+
+\largerpage[2]
+However, when the same relative clause follows the demonstrative, it can \textit{only} be interpreted restrictively. Establishing a context that forces a non-restrictive interpretation leads to ungrammaticality as depicted in \ref{only resrc}, see \citet{ishizuka:2008:RC}.
+
+\exg. *Ito-san-ni-wa musuko-ga hitori i-ru. [Sono [sakunen isha-ni nat-ta] musuko-ga] kekkon-shi-ta.\\
+Ito-Mr./Mrs.-\textsc{loc-top} son-\textsc{nom} one be-\textsc{prs} that last.year doctor-\textsc{loc} become-\textsc{pst} son-\textsc{nom} marriage-do-\textsc{pst}\\
+(`Mr./Mrs. Ito has one son. That son, who happened to become a doctor last year, got married.’) \\ \null \hfill \citep[5]{ishizuka:2008:RC} \label{only resrc}
+
+\newpage
+In other words, in Japanese, only restrictive relative clauses are allowed after demonstratives, and \is{non-restrictive relative clause}non-restrictive relative clauses are confined to a position in the \is{left periphery}left periphery. Following \citet{ishizuka:2008:RC} and \citet{cinque:2008:two}, I take this type of relative clause to be base-generated in a dedicated projection in the DP-external domain. In this position, they are outside the scope of the demonstrative, which accounts for the lack of scope effects and the obligatorily non-restrictive interpretation. This proposal is based on \citet{kim:2019:syntax}, who introduces a projection for non-integrated, \textit{supplementary}, relative clauses (SpplP) in Korean. The difference is that, in Japanese, non-restrictive relative clauses obligatorily merge outside the internal DP, whereas in Korean a certain type of non-restrictive relative clause can also merge lower.\footnote{A reviewer asks what the basis for the difference between Japanese and Korean regarding the position of non-restrictive relative clauses is.\label{footnote German RC} At this point, I cannot give a definitive answer. Languages seem to differ substantially as to which types of relative clauses they allow in the left periphery (if any). Whereas in Japanese, non-restrictive relative clauses have to occur in the left periphery, in Korean a subtype of non-restrictive relative clauses, namely supplementary ones has to. German is a language that only allows restrictive relative clauses in the nominal left periphery \citep{kohlich:2026:ms}. Forcing a non-restrictive interpretation, by means of the adverb \textit{übrigens} `by the way', leads to degraded results (see also \citealt{bhatt:1990:syntaktisch, roehrs:2019:left}).
+
+\par
+
+\exg. ??Der (übrigens) Bass singt, der Opernsänger hat für seine Vorstellung einen Preis gewonnen. (German)\\
+the by.the.way bass sings the opera.singer has for his performance a prize won\\
+`The opera singer, who (by the way) sings bass, has won a prize for his performance.’
+
+}  The relevant position is depicted \is{German}\is{non-restrictive relative clause}\is{numeral}in \figref{Non-restrictive Rc above demonstrative}.
+
+\begin{figure}
+\centering
+ \begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{external} {} [.D′\textsubscript{external} [.FP [.CP\textsubscript{non-res} \edge[roof]; {isha-ni natta} ] [.F′ [.DP\textsubscript{internal} sono [.D′\textsubscript{internal} [.... [.NP \edge[roof]; musuko ] {} ] D ] ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Base-generation position of non-restrictive relative clause (= non-restrictive interpretation of \ref{resrc})}
+\label{Non-restrictive Rc above demonstrative}
+\end{figure}
+
+Restrictive relative clauses, on the other hand, are base-generated DP-internal\-ly, as outlined in the preceding section, presumably below NumP. Their restrictiveness is expected being under the scope of D. In addition to individual movement within the indirect domain to a position above FP\textsubscript{Num}, I argue that restrictive relative clauses can even cross the internal DP border as depicted in \is{numeral}\figref{Restrictive Rc above demonstrative}.\footnote{According to \citet{ishizuka:2008:RC}, scope effects are retained through reconstruction and the moved relative clause keeps its restrictive interpretation. It is not entirely clear how reconstruction works in Ishizuka's system and readers are referred to her proposal. See also Footnote \ref{footnote ishizuka} in Section \ref{RCs above dem}.}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{external} {} [.D′\textsubscript{external} [.FP [.CP\textsubscript{res} \edge[roof]; \node (isha1) {isha-ni natta}; ] [.F′ [.DP\textsubscript{internal} sono [.D′\textsubscript{internal} [.FP\textsubscript{indirect} \node (isha2) {$<$CP$>$}; [.F′\textsubscript{indirect} [.... [.NP \edge[roof]; musuko ] {} ] F ] ] D ] ] F ] ] D ] ]
+\draw [color=blue][->] (isha2) |- +(0,-2) -| (isha1);
+\end{tikzpicture}
+\caption{Derived position of restrictive relative clause above demonstrative (= restrictive interpretation of \ref{resrc})}
+\label{Restrictive Rc above demonstrative}
+\end{figure}
+
+%What about \is{non-restrictive relative clause}non-restrictive relative clauses to the right of demonstratives then? Given the fact that they, as I argued, merge in the DP-external domain, the surface order is the result of movement by the demonstrative from the DP-internal to the DP-external domain across the non-restrictive relative clause in the \is{left periphery}left periphery. This predicts, correctly, that non-restrictive relative clauses are allowed below demonstratives.
+
+\subsubsection{Direct modifiers }
+
+Direct modifiers can also productively appear above demonstratives, given the right circumstances, but seemingly in free alternation. \is{non-intersective modifier}
+
+\ex. \ag. kono izen-no rūru\\
+this former-\textsc{no} rule\\
+\bg. izen-no kono rūru\\
+former-\textsc{no} this rule\\
+`this former rule’ \label{izen-no kono}
+
+From this, I conclude that direct modifiers have the option to leave the direct domain and move to the \is{left periphery}left periphery as well, in a similar fashion to quantificational modifiers, as depicted in \figref{Direct modifiers above demonstrative}. Importantly, they are not required to do so, hence this movement is optional.
+
+\begin{figure}
+\centering
+ \begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+\Tree [.DP\textsubscript{external} {} [.D′\textsubscript{external} [.FP [.XP \edge[roof]; \node (isha1) {izen-no}; ] [.F′ [.DP\textsubscript{internal} kono [.D′\textsubscript{internal} [... {} [.FP\textsubscript{direct} \node (isha2) {$<$XP$>$}; [.F′\textsubscript{direct} [.... [.NP \edge[roof]; rūru ] {} ] F ] ] ] D ] ] F ] ] D ] ]
+\draw [color=blue][<->] (isha2) |- +(0,-2) -| (isha1);
+\end{tikzpicture}
+\caption{Derived position of direct modifiers above demonstrative (= \ref{izen-no kono})}
+\label{Direct modifiers above demonstrative}
+\end{figure}
+
+\subsubsection{A discussion of focused modifiers} \label{focus,japanese}
+Focused modifiers and their connection to the left periphery, both within the DP and the clause, make up a rich and controversial research area. The high occurrence of modifiers with a \is{focus}focus (and topic) interpretation, in some cases above D-elements, is one of the main motivations for the split-DP hypothesis (\citealt{kiss:1998:identificational, kiss:2007:topic, giusti:1996:is, dimitrova:1998:fragments, ihsane:2001:specific, laenzlinger:2005:french, kim:2019:syntax} a.o.; cf. \citealt[140–151]{alex:2007:nounphrase} for discussion). The classical observation goes back to \citet{giusti:1996:is, dimitrova:1998:fragments}, who point out that adjectives in Albanian, which naturally occur postnominally and are marked when they appear prenominally, can reach a position above demonstratives, analyzed as FocP, via A'-movement for focus reasons leading to DPs such as \ref{albanian}. \is{Albanian}
+
+\exg. TJOTR-a grua e bukur (Albanian)\\
+other-the woman \textsc{det} nice\\
+`the other nice woman' \\ \null \hfill \citep[113]{giusti:1996:is} \label{albanian}
+
+\citet{ihsane:2001:specific} show that a \is{left periphery}focus interpretation with focal stress is also available to \is{numeral}numerals and possessors in certain languages and, again, \is{focus}focus movement is triggered. In Hungarian, this, in turn, forces the article to subsequently move to a higher position, to check the feature [+specific], according to the authors. This position corresponds to DP\textsubscript{external} proposed here, whereas the numeral with the focus interpretation in \ref{hungarianaz} is in  \is{Hungarian} DP\textsubscript{internal}.
+
+\ex. \label{hungarianaz} \ag. az EGY könyv (Hungarian)\\
+the ONE book \\
+\bg. *EGY az könyv\\
+ONE the book \\ \null \hfill \citep[48]{ihsane:2001:specific}
+
+\citet[§ 6.7]{kim:2019:syntax} argues that a \is{focus}focus projection is universal and that exactly one FocP should be assumed in the \is{left periphery}left periphery (see also \citealt{giusti:2016:latin, roehrs:2019:left}). This position arguably is below \is{quantificational modifier}FP\textsubscript{\textsc{quantity}} accounting for the ordering in \ref{unskillful}. \is{English}
+
+\newpage
+
+\ex. \label{unskillful} \a. most UNSKILLFUL doctors \null \hfill \citep[137]{kim:2019:syntax}
+\b. *UNSKILLFUL most doctors
+
+Focus movement has also been invoked in order to account for non-canonical orders of adjectives such as \textit{RED big book} (see also \citealt{svenonius:2008:position}). Arguably, the focused adjective in such cases has moved to the specifier of a focus projection, which, however, is below the DP projection in English.
+
+\exi. [DP the [FocP RED [FP\textsubscript{indirect} ... [FP\textsc{dimension} big [FP\textsc{color} $<$red$>$ ... [NP book ]]]]]] %
+
+However, in most languages, modifiers can also receive in situ focus \citep[191]{kim:2019:syntax} suggesting the absence of an EPP feature of FocP in such cases.
+
+\ex. I need a big RED book, not a big BLUE one.
+
+Japanese is a language (similar to, for instance, \is{Gungbe} Gungbe, cf. \citealt{aboh:2004:topic}) which exhibits \textit{focus-sensitive particles}. The prototypical topic marker -\textit{wa} can also acquire a focus function \ref{focuswa}, other focus-sensitive particles are -\textit{dake} `only' or -\textit{sae} `even’ \ref{focusdake} (\citealt{tomioka:2009:contrastive, tomioka:2016:infor, vermeulen:2007:jap, vermeulen:2012:info}, see also Section \ref{focusrc}).
+
+\exg. [Nihongo-wo shanai-de-\textbf{wa} tsuka-u] gaikokujin\\
+Japanese-\textsc{acc} office-\textsc{loc}-\textsc{foc} use-\textsc{prs} foreigner\\
+`a foreigner who uses Japanese only in the office’ \\ \null \hfill \citep[93]{akaso:2011:on} \label{focuswa}
+
+\exg. Taro-dake/mo/sae ano mise-de nihongo-no shōsetu-wo kat-ta.\\
+Taro-only/also/even that shop-\textsc{loc} Japanese-\textsc{no} novel-\textsc{acc} buy-\textsc{pst}\\
+`Only/Also/Even Taro bought Japanese novels at that shop.'  \\ \null \hfill \citep[195]{vermeulen:2012:info} \label{focusdake}
+
+These elements mark instances of clausal \is{focus}focus and cannot be freely combined with DP-internal constituents in order to put focus, for instance, on \is{numeral}numerals, shown below for -\textit{dake} `only’.
+
+\exg. *Ni-satsu-dake-no hon-wo kat-ta. \label{futatsu}\\
+two-\textsc{cl}-only-\textsc{no} book-\textsc{acc} buy-\textsc{pst}\\
+(`I bought only two books.’)
+
+The intended meaning can be expressed if the \is{quantificational modifier}quantifier is used as an adverbial modifier within the verbal domain, as in \ref{nisatsudake}. In this case, it can optionally be left-dislocated to a clause-initial position. Clearly, it is not part of the DP, since it does not occur with \textsc{no}, or any other form of the linker (see bleow), which we would expect if it was a nominal modifier.
+
+\exg. Ni-satsu-dake, hon-wo kat-ta.\\
+two-\textsc{cl}-only, book-\textsc{acc} buy-\textsc{acc}\\
+`I bought only two books.’ (Lit. `Two only, I bought books.’) \label{nisatsudake}
+
+The focus-sensitive particle -\textit{dake} can, however, attach to a numeral classifier and then occur DP-internally as shown in \ref{himitsu} where it attaches to \textit{futari} `two.people’, a suppletive form of the classifier for people -\textit{nin} and the number 2. That the focus-sensitive particle is part of the DP becomes clear as \textsc{no} obligatorily occurs.
+
+\exg. futari-dake-no himitsu-ni shi-te-ok-ō to [...]\\
+two.people-only-\textsc{no} secret-\textsc{dat} do-\textsc{ger}-prepare-\textsc{epis} \textsc{comp}\\
+`to make it a secret shared only by two [...]’ (Lit. `a two-person only secret’) \\ Nakanishi, Rei (2003): Yotō. Tokyo: Shinchōsha, via BCCWJ, 2023/11/09. \label{himitsu}
+
+Crucially, -\textit{dake} does not mark focus on the noun \textit{himitsu} `secret’, but on the numeral \textit{futari} `two.people’, so what is focused is the number of people. In any case, this example shows that focus is possible DP-internally, which suggests the existence of FocP in Japanese (see Sections \ref{focusrc} and \ref{focusincp}).
+
+Furthermore, in contrast to the \is{left periphery}Hungarian example presented in \ref{hungarianaz}, Japanese allows additional modifiers to precede focused numeral classifiers marked by -\textit{dake}, although this might not be the default order. \ref{sannindake} shows that both orders of modifiers are fine.\footnote{I am grateful to Ken Hiraiwa for bringing all these facts to my attention.}
+
+\ex. \label{sannindake} \ag. san-nin-dake-no kura-i himitsu\\
+three-\textsc{cl}-only-\textsc{no} dark-\textsc{i} secret\\
+\bg. kura-i san-nin-dake-no himitsu\\
+dark-\textsc{i} three-\textsc{cl}-only-\textsc{no} secret\\
+`a dark secret shared by only three people’
+
+These \is{numeral}facts indicate that there seems to be no requirement for \is{focus}focused modifiers to occur in the \is{left periphery}left periphery, suggesting the absence of a requirement for movement. This is backed up by evidence from the position of prosodically focused lexical modifiers. Despite being a pitch-accent language, Japanese can express focus via accentuation and prosody \citep{beckman:1986:intonational, hiraiwa:2012:syntactic, tomioka:2009:contrastive}. Modifiers with prosodic focus can occur in a higher, DP-initial, position, but they can also remain in situ. In \ref{akamaruchap3}, both answers are possible to the preceding question, emphasizing \textit{maru-i} `round’.\footnote{Japanese also bears an interesting similarity to Latin. Although this language had a comparatively free word order and modifiers on both sides of the noun, adjectives were consistently placed more often in a position to the left of the noun if used contrastively as shown by \citet{devine:2006:latin}. However, adjectives are not obligatorily placed in this position. An even more intriguing parallel to Japanese is that ``unfocused adjectives can raise to the left of the head as well as focused adjectives" \citep[409]{devine:2006:latin}, exactly paralleling the case with scrambled unfocused adjectives in the left periphery in Japanese.}  \is{Latin}
+
+\ex. \label{akamaruchap3} \ag. [Aka-i maru-i tēburu] ka, [aka-i shikaku-i tēburu] dotchi-wo kat-ta no?\\
+red-\textsc{i} round-\textsc{i} table \textsc{q} red-\textsc{i} square-\textsc{i} table which-\textsc{acc} buy-\textsc{pst} \textsc{q}\\
+`Did you buy the red round table or the red square table?'
+\bg. Aka-i MARU-I tēburu-wo kat-ta yo.\\
+red-\textsc{i} round-\textsc{i} table-\textsc{acc} buy-\textsc{pst} \textsc{sfp}\\
+`I bought the red ROUND table.’
+\cg. MARU-I aka-i tēburu-wo kat-ta yo.\\
+round-\textsc{i} red-\textsc{i} table-\textsc{acc} buy-\textsc{pst} \textsc{sfp}\\
+`I bought the ROUND red table.’
+
+Crucially, prosodic stress is in some instances not even enough to allow modifiers to move to a higher position. Recall from \ref{directrcchap3}, given in Section \ref{internaldirect}, that direct modifiers cannot precede relative clauses. This observation still holds if the \is{non-intersective modifier}non-intersective modifier \textit{shōrai-no} `future' is focused, meaning it must remain in situ and cannot cross the indirect domain.
+
+\ex. \ag. Kare-wa [ōku-no kurabu-ga chūmoku-shi-te-i-ru [\textbf{SHŌRAI-no} purosakkāsenshu]]-desu.\\
+he-\textsc{top} numerous-\textsc{no} club-\textsc{nom} pay.attention-do-\textsc{ger}-be-\textsc{prs} future-\textsc{no} pro.soccer.player-\textsc{cop.pol}\\
+`He is a FUTURE professional soccer player whom many clubs pay attention to.’
+\bg. *Kare-wa [\textbf{SHŌRAI-no} [ōku-no kurabu-ga chūmoku-shi-te-i-ru purosakkāsenshu]]-desu.\\
+\textsc{top} future-\textsc{no} numerous-\textsc{no} club-\textsc{nom} pay.attention-do-\textsc{ger}-be-\textsc{prs} pro.soccer.player-\textsc{cop.pol}\\
+
+Note that movement to a non-canonical position is available in Japanese as the co-occurrence with demonstratives has shown. Such a non-canonical position is presumably also available for some direct-only modifiers in \is{English}English, as shown below.
+
+\ex. I want to meet a FORMER handsome president, not a current one.
+
+Final evidence for the absence of an EPP-feature for \is{focus}FocP in Japanese comes from superlatives, another category of modifiers that has been argued to obligatorily occur within the \is{left periphery}left periphery \citep{cinque:2010:adj, cinque:2023:linearization}. In \is{English} English, if an adjective in superlative co-occurs with a numeral, moving the superlatives across the \is{numeral}numeral is necessary (cf. \citealt[11]{cinque:2023:linearization} and Guglielmo Cinque p.c.).
+
+\ex. \a. the blackest two dogs (that I've ever seen)
+\b. ??the two blackest dogs
+
+However, this is not the case in Japanese. On the contrary, both orders are fine.
+
+\ex. \ag. ichi-ban kuro-i ni-hiki-no inu\\
+number-one black-\textsc{i} two-\textsc{cl-no} dog\\
+`the blackest two dogs'
+\bg. ni-hiki-no ichi-ban kuro-i inu\\
+two-\textsc{cl-no} number-one black-\textsc{i} dog\\
+`the two blackest dogs'
+
+To summarize, focused modifiers in Japanese are not required, and sometimes not allowed, to move to the left periphery, although, in most cases, they seem to be able to allow such movement operations. From this, I conclude that the \is{left periphery}left periphery contains a focus projection, which has been proven empirically adequate and necessary in cross-linguistic perspective, but that, in Japanese, this projection simply lacks an EPP feature, and its Spec position can remain empty.
+
+\section{The internal structure of modifiers} \label{internalstructure}
+
+In this section, I develop an account for the internal structure of Japanese modifiers, a crucial aspect that has been missing in the discussion so far. This concerns both the monomoraic elements co-occurring with direct and ambiguous modifiers, as well as the complex internal structures available to indirect modifiers. In cartographic accounts, the internal structure of modifiers and the general DP structure are typically treated orthogonally. The account proposed in the following will yield new insights that further enrich the general understanding of the DP.
+
+\subsection{Introduction}
+\largerpage
+I focus especially on the monomoraic elements \textsc{no}, \textsc{i} or \textsc{na} outlined below. These always co-occur with non-verbal modifiers in Japanese in attributive position, whenever they express non-past in positive contexts.
+
+\ex. \ag. mumei-*(no) haiyū\\
+unknown-\textsc{no} actor\\
+`unknown actor/actress’ \null \hfill \textit{no}-modifier \label{mumeino}
+\bg. taka-*(i) doresu\\
+expensive-\textsc{i} dress\\
+`expensive dress' \null \hfill \textit{i}-adjective \label{takaimod1}
+\cg. shikku-*(na) doresu\\
+chic-\textsc{na} dress\\
+`chic dress' \null \hfill \textit{na}-adjective \label{shikkunamod1}
+
+Those elements cannot be analyzed as parts of the stem, since they disappear when the relevant lexemes, those which can, appear predicatively. Instead, the copula appears. A special behavior is exhibited by \textit{i}-adjectives, where the vowel /i/ also appears in predicative position.\footnote{This is the reason why authors such as \citet{nishiyama:1999:adj} treat them as the same element (see Section \ref{copulaelements}). In this study, I propose two different analyses for \textsc{i}.}
+
+\ex. \label{nopredicativeno} \ag. Ano haiyū-wa mumei (*no) da.\\
+that actor-\textsc{top} unknown \textsc{no} \textsc{cop}\\
+`That actor is unknown.’ \null \hfill \textit{no}-modifier
+\bg. Ano doresu-wa taka-i.\\
+that dress-\textsc{top} expensive-\textsc{i}\\
+`That dress is expensive.' \null \hfill \textit{i}-adjective
+\cg. Ano doresu-wa shikku (*na) da.\\
+that dress-\textsc{top} chic \textsc{na} \textsc{cop}\\
+`That dress is chic.' \null \hfill \textit{na}-adjective
+
+\textsc{no} and \textsc{na} are also mutually exclusive with other forms of the copula, namely the (canonical) long forms for non-past \textsc{dearu} and past \textsc{d(e)atta}.
+
+\ex. \label{dearuno} \ag. ano mumei-dearu (*no) haiyū\\
+that unknown-\textsc{cop} \textsc{no} actor\\
+`that actor who is unknown' \null \hfill \textit{no}-modifier
+\bg. ano shikku-dearu (*na) doresu\\
+that chic-\textsc{cop} \textsc{na} dress\\
+`that dress which is chic’ \null \hfill \textit{na}-adjective
+
+Thus, the question arises how these elements should be treated. Especially, the element \textsc{no} is of interest, since, as shown in Section \ref{intro japanese}, it is incredibly widely distributed and appears with a variety of lexical elements with different degrees of adjectival and nominal status, as well as different functional elements. Furthermore, most direct modifiers co-occur with this element, although by far not all \textit{no}-modifiers are direct. This means an account of this recalcitrant element with enough explanatory power to either explain why it appears in so many different instances, or alternatively to reduce all these instances to one underlying function, is desirable.
+
+In this section, I will propose a unifying account of \textsc{no} as a syntactic head which licenses modification, meaning I will choose such a unifying account. This account predicts neither restrictions on different word classes nor on modification types. In the next step, this analysis will be applied to the elements \textsc{i} and \textsc{na} whose distribution is more restricted as the lexemes they co-occur with are clearly adjectives. I will then discuss why the analysis presented here fares better than alternative accounts before I outline the integration of these elements in the DP.
+
+\subsection{A universal syntactic head}
+
+\subsubsection{The basic idea}
+
+I argue that \textsc{no} is the realization of a syntactic head, which I call \is{MOD@\textsc{mod}}\textbf{MOD} following \citet{rubin:1993:category, rubin:1994:mod, rubin:1996:transparent}. This head mediates modification within the DP. The basic assumptions are as follows.
+
+\ex. \a. Modifiers in Japanese must be licensed by a syntactic head in attributive position.
+\b. This head can be realized overtly in Japanese. Its unspecified spell-out form is /no/.
+\c. \textsc{mod} selects modifiers irrespective of modification type and word class. Whether a modifier is direct or indirect is decided in the syntax.
+
+In this sense, \textsc{mod} belongs to the category of syntactic linkers. There are several linker architectures on the market,\footnote{For an overview over linkers in the nominal, and also clausal domain, see among others \citealt{baker:2006:linkers, philip:2012:linkers, franco:2015:linkers, richards:2023:finding}.}  but I apply the rather minimalistic account of \citet{rubin:1994:mod, rubin:1996:transparent} to Japanese. Concretely, I argue that \textsc{mod} is a functional head that obligatorily selects and licenses different elements – lexical or functional – as modifiers \citep[36–40]{rubin:1994:mod}, itself being selected by the noun. In this sense, \textsc{mod} is the modificational counterpart of \textsc{pred}, discussed in Section \ref{chapter pred}.\footnote{Both elements are functional and universal. They are also historically related, as both Bowers and Rubin (and Nishiyama) worked at Cornell University.}
+
+ A minimal representation as \textsc{mod} is proposed in \citet{rubin:1994:mod} adapted to Japanese, looks as in \figref{Simple structure Mod} exemplified with a \textit{no}-modifier.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.N′ [.ModP {} [.Mod′ [.XP [.X mumei ] ] [.Mod no ] ] ] [.N haiyū ] ]
+\end{tikzpicture}
+\caption{Simple structure of \textsc{mod}: \textit{mumei-no haiyū} `unknown actor'}
+\label{Simple structure Mod}
+\end{figure}
+
+Furthermore, I argue that this head is universal, but optionally realized, depending on the language. This sticks to the core assumptions of Cartography. As languages only differ in if and how they realize lexical material mapped onto the functional structure \citep{rizzi:1997:the, shlonsky:2004:form, bortolotto:2016:RA, cinriz:2010:carto, cinriz:2016:functional}, this head might be covert in most languages (see also \citealt{richards:2023:finding}). In addition to the overt realizations of this head detected by \citet[§ 2.2 and 2.3]{rubin:1994:mod} in \is{Romanian} Romanian, \is{Tagalog} Tagalog and \is{Mandarin} Mandarin, allowing a reanalysis of the element \textsc{de} in Mandarin as \textsc{mod} \citep[97–102]{rubin:1994:mod}, I propose that it is also overtly realized inside the Japanese DP.\footnote{These realizations fulfill all the characteristics expected from functional categories: They are phonologically and morphologically dependent, cannot be separated from their complements and lack semantic meaning, ``descriptive content" in the sense of Abney (\citeyear[65–66]{abney:1987:the}; see \citealt[34]{rubin:1994:mod}). \citet[§ 2.2 and 2.3]{rubin:1994:mod} also analyzes the agreement systems of \is{Russian}Russian and \is{German}German as instances of \textsc{mod}. For recent discussion on German and \is{Dutch}Dutch see \citet{zeijlstra:2020:agree} and \citet{alexeyenko:2021:hff}. The \is{E{\.z}āfe@\textit{E{\.z}āfe}}\textit{E{\.z}āfe} morpheme appearing obligatorily with modifiers in Western Iranian languages including \is{Persian}Persian and \is{Zazaki}Zazaki might also be a good candidate for this analysis. See for instance \citet{toosarvandani:2014:the, franco:2015:linkers} and \citet{gn:2024:morpho} for relevant analyses and the Persian data in Section \ref{persiananalysis}.} 
+
+\subsubsection{Integration in The DP}
+
+The minimal structure given above in \figref{Simple structure Mod} of a noun phrase with \textsc{mod} selecting a modifier can be directly integrated into the cartographic DP as in \figref{Cartographic structure Mod}. This means what actually is embedded in the specifier position of the relevant functional projection is a modifier selected by \textsc{mod}. Following \textit{no}-modifiers, \is{MOD@\textsc{mod}}\textsc{mod} is overtly realized as /no/. Recall that \textit{mumei-no} `unknown’ is ambiguous, which is why I refrain from labeling the relevant functional projection as direct or indirect. I also include a demonstrative for reference.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} ano [.D′\textsubscript{internal} [.FP [.ModP {} [.Mod′ [.XP [.X mumei ] ] [.Mod no ] ] ] [.F′ [.NP \edge[roof]; haiyū ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Cartographic structure of DP with \textsc{mod}: \textit{ano mumei-no haiyū} `that unknown actor’}
+\label{Cartographic structure Mod}
+\end{figure}
+
+Crucially, this account can be applied to all kinds of modifiers, lexical or functional, independent of word class and modification type. In all cases, \textsc{mod} selects the modifier and this chunk is situated in the Spec position of a functional projection within the relevant domain. Before outlining the concrete cases in Section \ref{modintegration}, I will discuss the precise semantics and contribution of this element, its application to the other modifiers, some refinements and some possible alternatives.
+
+\subsection{More on the precise semantics and contribution of MOD} \label{semantics mod}
+
+As mentioned in the preceding section, several linker architectures have been proposed and they mostly differ in the universality and precise contribution of the linker, as well as its semantics.\footnote{I am grateful to an anonymous reviewer for encouraging me to include this section.} For instance, \citet{philip:2012:linkers} in a study on a variety of typologically unrelated languages defines linkers as functional elements devoid of semantics that must intervene structurally to highlight modification. As she remarks ``[...] the linker does not initiate the relationship between Head and Dependent; it simply marks its presence" \citep[65]{philip:2012:linkers}. She includes Japanese in her sample and also concludes that \textsc{no} is such a linker. On the contrary, \citet{franco:2015:linkers} argue that linkers are not semantically vacuous, but have interpretive properties. However, the authors remain agnostic about the universality of linkers.
+
+In the system defended here, \is{MOD@\textsc{mod}}\textsc{mod} is, in fact, demanded by the syntax in order for any element to function as a nominal modifier. It thus not only marks the relationship, it establishes the relationship. In Japanese, it is, furthermore, overtly realized in all instances of non-finite (that is: tenseless, but see example \ref{genzaikakoni}) modification. I furthermore argue that it is present, but unpronounced when it selects a finite modifier which projects an IP whose head is realized, as typical of verbal relative clauses. This means that in instances such as \ref{dearuno} above, it is not replaced or paraphrased by the copula, and the element /no/ is not an allomorph of it. Rather, since the modifier is predicative in nature, the copula can be overtly realized, which, in turn, causes the non-pronouncement of \textsc{mod}. See Section \ref{indirect mod} for more discussion.\footnote{Naturally, this begs the question why the forms \textsc{no} and or \textsc{na} can alternate with \textsc{dearu} in attributive position. I argue that the latter is the optional realization of the copula. This accounts for the fact that this option is less natural in attributive contexts. Simply realizing the syntactic head \textsc{mod} in absence of the copula is preferred.} 
+
+However, importantly, \is{MOD@\textsc{mod}}\textsc{mod} does not contribute semantics (in the strict sense) by itself and neither does it determine the type of a modifier or its contribution. In this point, I deviate from \citet{rubin:1994:mod}, who argues that \textsc{mod} necessarily contains a semantic component: Namely that of \is{type-shifting}type-shifting lexemes from type ⟨e,t⟩ to type ⟨⟨e,t⟩,⟨e,t⟩⟩, thus from predicates to attributes (\citealt[171–177]{rubin:1994:mod} cf. \citealt{partee:1986:noun}). However, this poses immediate problems when considering \is{quantificational modifier}quantificational modifiers and \is{numeral}numerals. Those obligatorily co-occur with \textsc{no} in Japanese, but are not of the basic type ⟨e,t⟩, but ⟨⟨e,t⟩,t⟩ \citep{partee:1986:noun}, thus would not be the right input for \textsc{mod}.\footnote{This also extends to several non-intersective modifiers such as \textit{mere} or \textit{only}, which have \textit{per se} a quantifier-like character, and counterparts of which also only appear with \textsc{no} (see Section \ref{non-intersective Japanese}). I am grateful to David Adger for pointing out this latter point to me.}
+
+This also clearly sets \textsc{mod} apart from the application of a similar syntactic head \is{JOIN@\textsc{join}}\textsc{join} proposed in \citet{truswell:2004:attributive, truswell:2009:attributive} and argued for in \citet{belk:2017:attributes}. Belk proposes a very similar account to \textsc{mod}, with the crucial difference that the lexical category of the input argument must be that of an adjective, which is of the basic type ⟨e,t⟩ \citep{partee:1986:noun}, and the output is always an attributive adjective \citep[§ 2.3]{belk:2017:attributes}, where \textit{attributive} corresponds to \textit{direct} in \citet{cinque:2010:adj}. The upshot of this is that \textsc{join} immediately licenses attributive modification by adjectives without having to assume set intersection. It is therefore predominantly suitable for \is{non-intersective modifier}non-intersective adjectives \citep[37–38]{truswell:2004:attributive}. Adjectives which are licensed via \textsc{join} arguably come with this information in their lexicon \citep[157]{belk:2017:attributes}.
+
+Rather, \textsc{mod} licenses modification, but the role of the modifier, whether it is direct or indirect, is determined in the syntax. This means that \textsc{mod} can select direct and indirect modifiers alike. In this sense, \textsc{pred} and \textsc{mod} are also not distributed alongside indirect and direct modification respectively, but \textsc{pred} is always present with (finite) predication, whereas \textsc{mod} is always present in modification structures, including those of predicative modifiers.
+
+\subsection{The application to \textit{i}- and \textit{na}-adjectives} \label{appl adj}
+
+Here, I extend the analysis of \is{MOD@\textsc{mod}}\textsc{mod} as a universal head to the other monomoraic elements, \textsc{i} and \textsc{na}. In a nutshell, I propose that all these elements are realizations of the same syntactic head. Hence, the differences between these three elements are straightforwardly accounted for. Contrary to \textsc{no}, \textsc{i} and \textsc{na} are specified for the word classes they co-occur with, namely \textit{i}-adjectives (iA) and \textit{na}-adjectives (naA) respectively. This allows for the formulation of a spell-out rule for \textsc{mod} which makes use of word classes.
+
+\ex. Spell-Out Rule for \textsc{mod} in Japanese\\
+$[Mod]$ $\leftrightarrow$ /i/ / iA \_ \\
+\phantom{$[Mod]$ $\leftrightarrow$} /na/ / naA \_ \\
+\phantom{$[Mod]$ $\leftrightarrow$} /no/ \label{spelloutrule}
+
+This rule states that \textsc{mod} is realized as /i/ following \textit{i}-adjectives, as /na/ following \textit{na}-adjectives, and as /no/ after all other modifiers. That means that the spell-out forms /i/ and /na/ are more specified, and only occur after the word classes of \textit{i}- and \textit{na}-adjectives respectively. The realization /no/, then, is the underspecified elsewhere case. I assume that this rule is achieved via Late Insertion for functional elements \citep{halle:1993:distributed, chomsky:2001:derivation}, ensuring that the realization of \textsc{mod} can take place after it has entered syntax. Importantly, \textsc{mod} is a syntactic head that is only active within the DP, therefore the rule in \ref{spelloutrule} only refers to attributive contexts. The relevant structures for lexemes belonging to the two Japanese adjective groups in attributive position thus look as in \figref{internal structure adjectives}. \is{Late Insertion}
+
+\begin{figure}
+
+\begin{subfigure}{\textwidth}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP [.ModP {} [.Mod′ [.AP [.A taka ] ] [.Mod i ] ] ] [.F′ [.NP \edge[roof]; doresu ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Structure of \textit{taka-i doresu} `expensive dress’ (= \ref{takaimod1})}
+\label{structure taka-i doresu}
+\end{subfigure}
+
+\begin{subfigure}{\textwidth}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP [.ModP {} [.Mod′ [.AP [.A shikku ] ] [.Mod na ] ] ] [.F′ [.NP \edge[roof]; doresu ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Structure of \textit{shikku-na doresu} `chic dress’ (= \ref{shikkunamod1})}
+\label{structure shikku-na doresu}
+\end{subfigure}
+
+\caption{Internal structure of \textit{i}- and \textit{na}-adjectives}
+\label{internal structure adjectives}
+
+\end{figure}
+
+There are some potential caveats with this application worth mentioning, mostly with regard to the diachronic development of Japanese. First, the morpheme \textsc{no} is already attested in Old Japanese, where it had the function of connecting two nouns (\citealt{frellesvig:2010:history} among others). From there, it only later entered other domains (\citealt{sakurai:1964:meiyo, wenck:1974:systematische}). On the contrary, \textsc{na} is derived from the historical copula \textit{nari} (attributive form \textit{naru}) and developed parallel to \textsc{da}, the short form of the copula confined to predicative position (\citealt{kubo:1992:japanese, urushibara:1993:syntactic, nishiyama:1999:adj, miyama:2011:da}). Finally, \textsc{i} seems to be derived from the attributive form in the inflectional paradigm of \textit{i}-adjectives, which differentiated between attributive and sentence-final form (-\textit{shi}), the same as other verbal categories. The relevant morpheme \textsc{ki} is most likely the predecessor of modern \textsc{i}, having undergone diachronic sound changes and omission of the velar consonant /k/.\footnote{See for an analysis \citet[§ 3.3]{nishiyama:1999:adj} and Section \ref{kitoi} of this book. For discussion on historical facts, see \citet{urushibara:1993:syntactic} and \citet{frellesvig:2010:history}.} This means that, already at earlier stages of the language, \textsc{no} could be identified as an individual morpheme, however, the elements \textsc{i} and \textsc{na} were parts of the inflectional paradigm of Japanese adjectives. Researchers might therefore be hesitant to apply the Mod-hypothesis to these elements.
+
+Another potential problem is that the morpheme \textsc{i} does not only occur in attributive, but also in predicative position in Modern Japanese.
+
+\ex. \ag. taka-*(i) doresu\\
+expensive-i dress\\
+`expensive dress'
+\bg. Ano doresu-wa taka-*(i).\\
+that dress-\textsc{top} expensive-\textsc{i}\\
+`That dress is expensive.'
+
+Since \textsc{mod} is confined to attributive contexts (see below), an alternative account needs to be posited for \textsc{i} in such predicative contexts. In Section \ref{copulaelements}, I will put forth an analysis of \textsc{i} in this position as an instance of the copula \citep{nishiyama:1999:adj} and discuss why this analysis is not readily applicable to attributive \textsc{i}.
+
+Nevertheless, as will be discussed further below, the account of all three elements as instances of \textsc{mod} makes the system adopted here consistent and avoids many of the problems of other accounts. Furthermore, it allows reduction of all three elements to the same underlying type, namely a functional head responsible for attributive modification.
+
+\subsection{Restrictions}
+
+As already visible in the examples above, the distribution of \is{MOD@\textsc{mod}}\textsc{mod} is not free. It is a dependent element and needs to select an element as attributive modifier. It attaches to this modifier and is confined in its realization to the overt realization of the modifier itself. It thus behaves as expected of functional elements (cf. \citealt[§ 2.2.2]{rubin:1994:mod}). Furthermore, it needs to occur DP-internally, thus in the context of nominal modification. These two restrictions are intertwined and can be formulated in the refinement rule in \ref{refinementmod}.
+
+\ex. Realization of \textsc{mod} in Japanese, refinement\\
+1) \textsc{mod} must select a modifier which must be overtly realized. \\
+2) \textsc{mod} only occurs within the DP. \label{refinementmod}
+
+The requirement to select a modifier which must be overtly realized can be illustrated with instances of so-called \is{light noun}\textit{light nouns}. In cases where English applies \textit{one}-substitution of nominal constituents \ref{redshirts}, Japanese also must employ a placeholder with a nominal character, called \textit{light noun} in \citet{hiraiwa:2012:mechanism}. Unfortunately, the most basic light noun is \textit{no}, thus homophonous to \textsc{mod}, as shown in the DP in \ref{redshirtsjapanese}.
+
+\ex. I like red shirts, but I hate blue *(ones). \label{redshirts}
+
+\exg. Aka-i shatsu-wa suki-da kedo, ao-i *(no)-wa kirai-da.\\
+red-\textsc{mod} shirt-\textsc{top} like-\textsc{cop} but blue-\textsc{mod} \textsc{ln}-\textsc{top} hate-\textsc{cop}\\
+`I like red shirts, but I hate blue ones.’ \label{redshirtsjapanese}
+
+When a noun is pronominalized with the \is{light noun}light noun \textit{no} `(the) one’, but modified by a \textit{no}-modifier, subsequent haplology causes one of the two elements to be deleted \citep[13531–1352]{hiraiwa:2016:ellipsis}. In \ref{haplology}, \textit{no} could be \is{MOD@\textsc{mod}}\textsc{mod} or the light noun.
+
+\exg. Kuruma-wa Nihon no ga suki-da.\\
+car-\textsc{top} Japan \textsc{mod}/\textsc{ln} \textsc{nom} be.fond-\textsc{cop}\\
+`As for cars, I like Japanese ones.’ \label{haplology}
+
+However, the point can be made clear by using other, more specified, light nouns such as \textit{mono} `thing’, which replaces the noun \textit{kuruma} `car’ in the second instance in \ref{watashino}. It is itself modified by a nominal possessor and this possessor must be licensed by \textsc{mod}, which is realized as /no/.
+
+\exg. Kono kuruma-wa watashi-no mono desu.\\
+this car-\textsc{top} I-\textsc{mod} \textsc{ln}.thing \textsc{cop.pol}\\
+`This car is mine.’ \label{watashino}
+
+Such examples thus show that \textsc{mod} must form a syntactic constituent with the modifier, hence neither of the two can be elided individually.
+
+\ref{refinementmod} also explains why \textsc{mod} does not appear outside of modificational contexts.\footnote{The fact that \textsc{mod} is not realized when the head of I is overt, will be discussed in Section \ref{indirect mod}.} This includes predicative contexts, but also accounts for clausal (floating) quantifiers mentioned in Section \ref{focus,japanese} and repeated below. Since the quantifier is not part of the DP, and thus is no modifier, \textsc{mod} is not realized.
+
+\exg. Ni-satsu-dake, hon-wo kat-ta.\\
+two-\textsc{cl}-only, book-\textsc{acc} buy-\textsc{acc}\\
+`I bought only two books.’ (Lit. `Two only, I bought books.’) \null \hfill (= \ref{nisatsudake})
+
+This restriction can be further illustrated via an example of a so-called \is{major subject construction}\textit{major subject construction} \citep{kuroda:1992:japanese, heycock:1993:focus, vermeulen:2005:poss} given in \ref{joseigadoresuga} and elaborated in detail in Section \ref{majorsubject}.
+
+\exg. Sono josei-ga doresu-ga utsukushi-i.\\
+this woman-\textsc{nom} dress-\textsc{nom} beautiful-\textsc{i}\\
+`As for this woman, her dress (= the dress of this woman) is beautiful.’ \label{joseigadoresuga}
+
+In \ref{joseigadoresuga}, the two nouns \textit{doresu} `dress’ and \textit{josei} `woman’ stand in a possessor-possessee relationship. They both appear with the nominative case marker -\textit{ga}, but while the lower noun is theta marked, the higher \textit{ga}-marked noun has a focus interpretation (see \citealt{heycock:1993:focus, vermeulen:2005:poss}). Importantly, the two nouns are not syntactically embedded in a modification structure and \textit{doresu} is devoid of an overt modifier. The underlying structure of \ref{joseigadoresuga} is arguably \ref{joseiunderlying} in which the possessor of the dress appears overtly \citep{kuroda:1992:japanese}. The entity \textit{josei} `woman’ appears twice making this sentence pragmatically marked. However, crucially, as it fulfills the role of a modifier of \textit{doresu} `dress’, it is obligatorily followed by \textsc{no}, contrary to \ref{joseigadoresuga}. \is{major subject construction}
+
+\exg. Sono josei-ga (sono) josei-no doresu-ga utsukushi-i.\\
+this woman-\textsc{nom} this woman-\textsc{mod} dress-\textsc{nom} beautiful-i\\
+`As for this woman, the dress of this woman is beautiful.’ \label{joseiunderlying}
+
+The crucial part is that to arrive at \ref{joseigadoresuga} from \ref{joseiunderlying}, not only the nominal part \textit{(sono) josei} `(this) woman’ is deleted, but also \textsc{no}. There is no modifier to select, hence \is{MOD@\textsc{mod}}\textsc{mod} is not present in the structure and not realized.
+
+\subsection{Discussion: Alternative accounts} \label{comparisonpreviousno}
+
+In this section, I will quickly compare the idea presented here to alternative accounts and show why it fares better.
+
+\subsubsection{Post-syntactic insertion}
+
+\textsc{mod} as depicted here is very similar to the well-known \textit{Mod-Insertion Rule} of \citet{kitagawa:1982:prenominal}, and see \citet{watanabe:2010:notes}, which became a landmark proposal for authors arguing for a single syntactic status of \textsc{no}. The revised version of this rule from \citet{watanabe:2010:notes} is given below. \is{post-syntactic insertion}
+
+\ex. Mod Insertion Rule (Revised): [DP . . . XP(–tense) N] \\ $\rightarrow$ [DP . . . XP(–tense) Mod N], where head noun is overt and Mod $=$ \textit{no} \\ \null \hfill \citep[66]{watanabe:2010:notes}
+
+Essentially, this rule states that the element \textsc{no} is inserted post-syntactically whenever modification happens. However, it is subsequently deleted when the modifying element contains tense, which explains why it never co-occurs with relative clauses. By including this aspect, the authors point out a crucial difference between Japanese and Mandarin, where \textsc{de} does obligatorily follow relative clauses.
+
+In a nutshell, in the account defended here, \is{MOD@\textsc{mod}}\textsc{mod} is a functional category that is already present in the syntax and licenses lexical and functional elements as modifiers, whereas in the post-syntactic account of \citet{kitagawa:1982:prenominal}, \textsc{mod} gets inserted later after the relationship between modifier and noun has already been established. Both options are appealing, and there is no reason why the proposal of \citet{kitagawa:1982:prenominal} should be incompatible with the system defended here, which also relies on some form of Late Insertion \citep{halle:1993:distributed, chomsky:2001:derivation}, although to ensure the correct realization of \textsc{mod}. \is{Late Insertion}
+
+I argue that the analysis of \textsc{no} as a syntactic head is preferable from a theoretic perspective, as it fits better with the cartographic framework adopted here. Furthermore, it has the big advantage of being more language-universal, allowing to explain phenomena in a variety of different languages with regard to such syntactic heads involved in modification, contrary to the highly language-specific Mod Insertion rule.
+
+One concrete argument against post-syntactic analyses of linkers, also provided in \citet[54–55]{philip:2012:linkers}, is that, as for instance shown in the examples \ref{watashino} and following, \textsc{mod} forms a syntactic constituent with the modifier, evidenced by the fact that neither can be elided without the other. If \textsc{mod} was post-syntactically inserted, it would be odd if neither the modifier itself or the linker could survive elision of the other element.
+
+\subsubsection{Pre-syntactic insertion}
+
+An analysis that is worth considering, but ultimately not suitable, is pre-syntactic insertion, for instance along the lines of a \textit{word marker} hypothesis proposed prominently in \citet{alex:2008:class} for the inflectional endings of nouns in \is{German} German, \is{Russian} Russian and \is{Greek} Greek, following several predecessors \citep{harris:1991:exponence, ritter:1993:where, aronoff:1996:morphology, oltra:1999:on, oltra:2005:stress}. Word markers are pre-syntactically inserted elements that are bestowed with a variety of binary features, and these features match those of the different inflectional classes and cases of nouns in these languages \citep[33]{alex:2008:class}. One could entertain the idea that \textsc{no} is a word marker that is pre-syntactically added to lexical and functional elements to form a compound structure. The obvious problem is that we would never expect this word marker to be absent once the lexical element has entered syntax (Artemis Alexiadou p.c.). Recall however that \textsc{no} never appears in predicative position. \is{word marker}
+
+\exg. Ano haiyū-wa mumei- (*no) da.\\
+that actor-\textsc{top} unknown \textsc{no} \textsc{cop}\\
+`That actor is unknown.’ \\ \null \hfill (= \ref{nopredicativeno})
+
+If \textsc{no} was a word marker, it should be able to appear in predicative contexts, but this is illicit. Furthermore, we would never expect such a marker to be attracted to functional elements, such as postpositions. However, \textsc{no} can follow postpositions in modificational contexts, as alluded to in Chapter \ref{chapter introduction}.
+
+\exg. ishi-de-no kōgeki\\
+stone-\textsc{ins-no} attack\\
+`an attack with stones' \null \hfill \citep[248]{saito:2008:N}
+
+\subsubsection{Lexical compounds}
+
+One might also entertain the possibility that two adjacent elements, especially nouns, out of which the first one is followed by \textsc{no}, actually do not mark cases of modification, but of lexical compound formation. A crucial fact which shows that the construction at hand is not an instance of compound formation is that the first noun can be anaphorically bound as shown in \ref{3:senseinohon}, which offers an ambiguous interpretation: The internal argument of the matrix verb has been dropped and either one of the nouns in the subordinate clause, the head noun or its modifier, could serve as the antecedent, as indicated via the indices.
+
+\exg. Sensei\textsubscript{1}-no hon\textsubscript{2}-wo yon-de, \textit{pro}\textsubscript{1/2} suki-ni nat-ta.\\
+teacher-\textsc{mod} book-\textsc{acc} read-\textsc{ger} pro be.fond-\textsc{dat} become-\textsc{pst}\\
+1. $\approx$ `Having read the teacher’s\textsubscript{1} book\textsubscript{2}, \textit{pro} became fond of it\textsubscript{2}.’\\
+2. $\approx$ `Having read the teacher’s\textsubscript{1} book\textsubscript{2}, \textit{pro} became fond of him/her\textsubscript{1}.’ \label{3:senseinohon}
+
+This shows that the modifier \textit{sensei-no} `teacher’s’ must have a syntactic status, and is not part of a compound. Compare this to the ungrammatical \is{English} English example containing a lexical compound below. Here, the first part of the compound cannot serve as an antecedent to the pronoun \textit{it}.
+
+\ex. *With my sun\textsubscript{1} glasses, I am protected from it\textsubscript{1} well. \\ \null \hfill \citep[37]{rae:2010:ordering}
+
+\subsubsection{Only predication and only attribution}
+
+Obviously, analyses that derive \textsc{no} from a predicate structure are not tenable, given the many direct \textit{no}-modifiers mentioned thus far and attested in the data set. In \citet{dikken:2004:complex}, cf. \citet{dikken:2006:relators, moro:1997:raising}, \textsc{no} is treated parallel to English DPs with the element \textit{of} as shown below together with the underlying structure. \is{predicate inversion}
+
+\ex. \a. a jewel of a village \hfill \citep[162]{dikken:2006:relators}
+\b. [\textsc{rp} [village][\textsc{relator} [\textsc{similar} jewel]]] \hfill \citep[178]{dikken:2006:relators}
+
+The underlying structure contains the predicate \textsc{similar} whose head is empty and which needs to be licensed. This licensing is achieved via predicate inversion. Concretely, the predicate complement moves to the Spec position of the \textsc{relator} which is spelled out in English as /of/ \citep[§ 5]{dikken:2006:relators}. The reason for this is to achieve a different (contrastive) information structure. In addition to the problem that the different head-parameter of Japanese leads to problems in word order, this proposal is not tenable as it predicts all \textit{no}-modifiers to be indirect.\footnote{The same holds for \citet{koopman:2016:further}, who propose a relative clause account for \textit{no}-modifiers.}
+
+On the other hand, one could be tempted to reduce \textsc{mod} only to structures in which direct modification is at stake. I discussed this point already in Section \ref{semantics mod}, where I gave a reference to \citet{belk:2017:attributes}, who argues that \is{JOIN@\textsc{join}}\textsc{join} (our \textsc{mod}) selects adjectives and produces attributive adjectives, that is direct adjectives \citep[§ 2.3]{belk:2017:attributes}. However, this account crucially undergenerates, since \textsc{no} also co-occurs with indirect modifiers, nominal lexemes (\textit{Nihon-no} `Japan(ese)’) and also functional elements (\textit{doko-no} `where’).
+
+\subsubsection{Alternatives for I and NA}
+
+Some other noteworthy analyses for \textsc{i} and \textsc{na} were mentioned in Section \ref{intro japanese}. The prominent analysis to be adopted for the former element, and the counterpart to \textsc{na} in \textit{predicative} position is that of a combination as copula and tense element (Section \ref{copulaelements}), but for the reasons mentioned above (direct modification and \textsc{mod} being restricted to DP-internal environments), this account does not extend to the attributive occurrence of these elements. A noteworthy alternative is the \textit{case marker} hypothesis defended in \citet{yamakido:2005:nature} and \citet{larson:2008:ezafe}, according to which \textsc{i} and \textsc{na} receive an analysis identical to the \is{E{\.z}āfe@\textit{E{\.z}āfe}}\textit{E{\.z}āfe} morpheme in Western Iranian languages as case markers. The authors also propose an account that reduces the different output to the different word classes, but handle it via resorting to case. This analysis suffers from the problem that it is not clear why \textsc{i} and \textsc{na} are always present, even in relative clause structures, thus in larger structures where it is not clear how case is assigned.
+
+\exg. kami-ga kirei-na hito\\
+hair-\textsc{nom} pretty-\textsc{na} person\\
+`a person whose hair is pretty' \null \hfill \citep[34]{kaplan:1995:the}
+
+The analysis of \citet{yamakido:2005:nature} and \citet{larson:2008:ezafe} does not foresee the option of the case marker to occur with CPs (or even IPs) as also criticized for instance by \citet{samvelian:2008:ezafe} and \citet{kahne:2014:revisiting} for the \is{Persian} Persian data. It furthermore remains unclear why the respective elements should disappear, for example when modifiers inflect for past. As \citet[296, Footnote 25]{watanabe:2013:non} notes, ``This proposal is untenable for the reason that the sensitivity to tense is left unexplained".
+
+\subsection{Application: Integration via \textsc{Mod}} \label{modintegration}
+\largerpage[2]
+
+Above, I defended the \textsc{mod}-hypothesis and explained why it fares better than most alternatives. In the following subsections, I will discuss how each modifier that is selected via \textsc{mod} is embedded in the DP in line with the cartographic research program. As discussed, for instance in Section \ref{semantics mod}, \is{MOD@\textsc{mod}}\textsc{mod} does not differentiate between modification type, word class or other factors.
+
+\subsubsection{Structure of direct modifiers}
+
+Exemplified with the non-intersective \textit{no}-modifier \textit{shōrai-no} `future’ discussed above, the structure of a direct modifier within the DP is as displayed in \figref{Tree ano shorai-no puro} based on example \ref{shoraimod} repeated below for illustration.\footnote{Recall that demonstratives such as \textit{ano} `that’ are specifiers in Japanese, accounting for the correct word order.}
+
+\exg. ano shōrai-no purosakkāsenshu\\
+that future-\textsc{mod} pro.soccer.player\\
+`that future professional soccer player’ \label{shoraimod}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} ano [.D′\textsubscript{internal} [.FP\textsubscript{direct} [.ModP {} [.Mod′ [.XP \edge[roof]; shōrai ] [.Mod no ] ] ] [.F′\textsubscript{direct} [.NP \edge[roof]; {purosakkāsenshu} ] F ] ] D ]]
+\end{tikzpicture}
+\caption{Structural representation of direct modifiers (= \ref{shoraimod})}
+\label{Tree ano shorai-no puro}
+\end{figure}
+
+The relevant assumptions are simple: Since the modifier \textit{shōrai-no} `future’ is direct, it is merged in the direct domain in an unspecific functional projection. It is selected by \is{MOD@\textsc{mod}}\textsc{mod} and licensed as an attributive modifier. As the word class status of \textit{shōrai-no} is unclear, I adopt the label XP. The head of \textsc{mod} is spelled out as /no/. This is the structure to be adopted for all direct modifiers.
+
+\subsubsection{Structure of indirect modifiers} \label{indirect mod}
+
+More must be said about indirect modifiers. Recall that (as long as it can principally appear in predicative position) every modifier is ambiguous between a direct and an indirect status. This is, for example, the case for \textit{mumei-no} `unknown’ repeated from \ref{mumeino} and given alongside the relevant predicative occurrence.
+
+\ex. \label{mumei indirect 3} \ag. ano mumei-no haiyū\\
+that unknown-\textsc{mod} actor\\
+`that unknown actor’
+\bg. Ano haiyū-wa mumei-da.\\
+that actor-\textsc{top} unknown-\textsc{cop}\\
+`That actor is unknown.’
+
+Indirect modifiers are embedded along the lines depicted in \figref{Structure indirect modifiers}, exemplified with \textit{mumei-no} in a status as indirect modifier.
+
+ \begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} ano [.D′\textsubscript{internal} [.FP\textsubscript{indirect} [.ModP {} [.Mod′ [.CP \edge[roof]; mumei ] [.Mod no ] ] ] [.F′\textsubscript{indirect} [.NP \edge[roof]; haiyū ] F ] ] D ]]
+\end{tikzpicture}
+\caption{Structure of indirect modifiers (= \ref{mumei indirect 3})}
+\label{Structure indirect modifiers}
+\end{figure}
+
+Indirect modifiers are merged in the specifier position of functional projections inside the indirect domain. Like \textit{shōrai-no} `future’ in \ref{shoraimod}, indirect modifiers are licensed via \is{MOD@\textsc{mod}}\textsc{mod} in attributive position. Depending on the word class of the preceding modifier, \is{MOD@\textsc{mod}}\textsc{mod} is spelled out as /i/, /na/ or /no/. In this case, it licenses the \textit{no}-modifier \textit{mumei-no} and is realized as /no/.
+
+A crucial difference between indirect and direct modifiers, besides the different positions inside the DP, is that indirect modifiers are embedded in larger structures. As outlined earlier in this chapter and motivated in Section \ref{cinque adj}, I assume indirect modifiers to be CPs.
+
+Crucially, however, it is not the case that in all CPs, an instance of \textsc{mod} overtly appears. Recall that \textsc{no} never follows verbal relative clauses in Japanese, and neither do \textsc{i} or \textsc{na}, contrary to Mandarin \textsc{de}, as illustrated once more below.
+
+\exg. [\textsubscript{CP} kare-ga kat-ta] (*no) hon\\
+{} he-\textsc{nom} buy-\textsc{pst} \textsc{no} book\\
+`the book that he bought’
+
+\largerpage
+The relevant elements are neither present when adjectives are inflected for past, nor when the canonical forms of the copula, \textsc{dearu} for non-past and \textsc{d(e)atta} for past appear. 
+
+%
+
+\ex. \ag. ano taka-katta (*i) doresu\\
+that expensive-\textsc{pst} \textsc{i} dress\\
+`that dress which was expensive' \null \hfill \textit{i}-adjective, past
+\bg. ano shikku-dearu (*na) doresu\\
+that chic-\textsc{cop} \textsc{na} dress\\
+`that dress which is chic’ \null \hfill \textit{na}-adjective, non-past
+\cg. ano mumei-dearu (*no) haiyū\\
+that unknown-\textsc{cop} \textsc{no} actor\\
+`that actor who is unknown' \null \hfill \textit{no}-modifier, non-past
+
+Foreshadowing the analysis, what is crucial in these instances is that overt tense appears.
+
+Compare this to structures where, on the other hand, lexemes from the two adjective groups or the group of \textit{no}-modifiers co-occur with \is{MOD@\textsc{mod}}\textsc{mod}, but clearly have a clausal status. Prototypically, this happens when they co-occur with a subject. This is illustrated below for each word class.
+
+\ex. \ag. Tarō-ga shujinkō-no monogatari\\
+Taro-\textsc{nom} main.protagonist-\textsc{no} story\\
+`story in which Taro is the main protagonist' \\ \null \hfill \textit{no}-modifier \citep[66]{watanabe:2010:notes}
+\bg. kami-ga naga-i hito\\
+hair-\textsc{nom} long-\textsc{i} person\\
+`person whose hair is long' \\ \null \hfill \textit{i}-adjective \citep[1278]{miyagawa:2011:genitive}
+\cg. shūshoku-ga taihen-na butsurigaku\\
+job-\textsc{nom} hard-\textsc{na} physics\\
+`physics, where finding a job is difficult' \\ \null \hfill \textit{na}-adjective \citep[255]{kuno:1973:structure}
+
+Deferring a precise analysis of such constructions to Section \ref{majorsubject}, crucially, the modifiers in these examples are embedded into a CP, not just in a small clause or under PredP \citep{bowers:1993:predication}. First, there must at least be an IP-layer present to host the overt subjects and assign nominative case. In the examples above, this position, namely Spec, IP, is occupied by \textit{Tarō}, \textit{kami} `hair’ and \textit{shūshoku} `job’ respectively.
+
+Furthermore, there is evidence that overt tense is implied in these examples, and this tense is non-past. Including a temporal adverb with reference to the present, such as \textit{genzai} `(at) present’, is unproblematic. Inserting, however, a temporal adverb denoting past, such as \textit{kakoni} `in the past’, leads to ungrammaticality. This shows that overt tense, namely a temporal reference to the present, is contained in those modifiers, even when they co-occur just with the monomoraic elements. Observe the minimal pair in \ref{genzaikakoni}.
+
+\ex. \label{genzaikakoni} \ag. Tarō-to Hanako-ga genzai shujinkō-no monogatari\\
+Taro-\textsc{com} Hanako-\textsc{nom} at.present main.protagonist-\textsc{mod} story\\
+`story in which Taro and Hanako are the main protagonists at present’
+ \bg. *Tarō-to Hanako-ga kakoni shujinkō-no monogatari\\
+Taro-\textsc{com} Hanako-\textsc{nom} in.the.past main.protagonist-\textsc{mod} story\\
+(`story in which Taro and Hanako were the main protagonists in the past’)
+
+These arguments show that those modifiers are at least of size IP. However, no overt tense morpheme is realized, i.e. the head of IP seems to be empty. In this study, I do treat all Japanese relative clauses as involving a CP-layer (for arguments see Section \ref{size,indirect}), therefore, the relevant structure is as in \ref{cps}, in which \textit{Tarō-ga shujinkō} is a CP which is selected by \is{MOD@\textsc{mod}}\textsc{mod} and licensed as attributive modifier. %\is{indirect modifiers}
+
+\exg. [\textsubscript{DP} [\textsubscript{CP} Tarō-ga shujinkō-no] monogatari]\\
+{} {} Taro-\textsc{nom} main.protagonist-\textsc{mod} story\\
+`story in which Taro is the main protagonist' \null \hfill \citep[66]{watanabe:2010:notes} \label{cps}
+
+Adopting an analysis along the lines of \is{operator}operator movement for relative clauses, the whole derivation looks as in \figref{Derivation shujinko-no monogatari} (for more details see Section \ref{operator}).
+
+ \begin{figure}[t]
+\fittable{
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=2pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{indirect} [.ModP {} [.Mod′ [.CP Op\textsubscript{1} [.C′ [.IP [.DP {} [.D′ [.FP {} [.F′ [.... [.NP \edge[roof]; Tarō-ga ] {} ] F ] ] D ] ] [.I′ [.NP {} [.N′ {} [.N shujinkō ] ] ] I ] ] C ] ] [.Mod no ] ] ] [.F′\textsubscript{indirect} [.NP \edge[roof]; monogatari\textsubscript{1} ] F ] ] D ]]
+\end{tikzpicture}
+}
+\caption{Derivation of \ref{cps}}
+\label{Derivation shujinko-no monogatari}
+\end{figure}
+
+The clausal modifier is embedded in a functional projection for indirect modifiers in the DP-internal domain. It is of size CP and selected by ModP, whose head is spelled out as /no/ since the lexical head of the relative clause is a noun. The subject DP \textit{Tarō} is situated in Spec, IP, where it receives nominative case. Embedded in the relative clause is an operator \textit{Op}, which moves to Spec, CP and is co-indexed with the noun \textit{monogatari} `story’, thereby ensuring that this noun is correctly interpreted inside the relative clause, solving the Connectivity Problem \citep{salzmann:2017:reconstruction}.
+
+The question is where the operator exactly originates. There is reason to believe that it starts in the extended projection of the modifying NP (or more precisely DP, see below) \textit{shujinkō}. First, note that some relationship between \textit{monogatari} `story’ and \textit{shujinkō} `main protagonist’, one akin to possession, has to be established at some point in the derivation as displayed in example \ref{monogatari no shujinko}. \is{connectivity problem}
+
+\exg. sono monogatari-no shujinkō\\
+that story-\textsc{mod} main.protagonist\\
+`the main protagonist of that story’ \label{monogatari no shujinko}
+
+This underlying relationship is given in \figref{monogatari no shujinko tree} for concreteness.\footnote{Note that the demonstrative \textit{sono} is in the specifier of the DP with the head noun \textit{shujinkō} and does not form a constituent with \textit{monogatari}.}
+
+ \begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=2pt}
+ \Tree [.DP sono [.D′ [.FP [.ModP {} [.Mod′ [.NP \edge[roof]; monogatari ] [.Mod no ] ] ] [.F′ [.... [.NP \edge[roof]; shujinkō ] {} ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Relationship between \textit{monogatari} `story’ and \textit{shujinkō} `main protagonist’}
+\label{monogatari no shujinko tree}
+\end{figure}
+
+This means that the \is{operator}operator is a placeholder for \textit{(sono) monogatari} `(this) story’, as shown in \ref{placeholder}.
+
+\exg. [\textsubscript{DP} [\textsubscript{CP} Tarō-ga \textit{Op}\textsubscript{1} shujinkō-no] monogatari\textsubscript{1}]\\
+{} {} Taro-\textsc{nom} Op main.protagonist-\textsc{mod} story\\
+`story in which Taro is the main protagonist (of the story)’ \label{placeholder}
+
+This gives good evidence that the operator starts out from deep within the relative clause, namely from a position in the extended projection of the modifying noun, which then actually constitutes a DP. See \figref{Base position operator}. \is{connectivity problem}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=2pt}
+ \Tree [.DP {} [.D′ [.FP Op [.F′ [... {} [.NP {} [.N′ {} [.N shujinkō ] ] ] ] F ] ] D ] ]
+\end{tikzpicture}
+\caption{Base position of operator}
+\label{Base position operator}
+\end{figure}
+
+From this deep position within the modifying DP, the \is{operator}operator moves to Spec, CP of the relative clause and ensures correct interpretation of the head noun and the relative clause as a whole. Crucially, again, within the relative clause a second concrete spell-out of \is{MOD@\textsc{mod}}\textsc{mod} is absent, as no overt modifier appears.
+
+A remaining point left unexplained is why no instance of \textsc{mod} appears once the head of I is filled, i.e. once the inflectional forms \textsc{katta}, \textsc{dearu} or \textsc{deatta} are realized as in example \ref{shujinkodeatta}.
+
+\exg. [Tarō-ga shujinkō-de-at-ta] (*no) monogatari\\
+Taro-\textsc{nom} main.protagonist-\textsc{pred-cop-pst} \textsc{mod} story\\
+`story in which Taro was the main protagonist' \\ \null \hfill \citep[66]{watanabe:2010:notes}  \label{shujinkodeatta}
+
+I argue that the relevant structure of only the CP looks as in \figref{Structure shujinko de atta}.
+
+ \begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.CP Op [.C′ [.IP [.DP {} [.D′ [.FP {} [.F′ [.... [.NP \edge[roof]; {Tarō-ga} ] {} ] F ] ] D ] ] [.I′ [.CopP {} [.Cop′ [.PredP {} [.Pred′ [.NP \edge[roof]; {shujinkō} ] [.Pred de ] ] ] [.Cop at ] ] ] [.I ta ] ]] C ] ]
+\end{tikzpicture}
+\caption{Structure of modifier \textit{Tarō-ga shujinkō-de-at-ta} `(story) in which Taro was the main protagonist’ (= \ref{shujinkodeatta})}
+\label{Structure shujinko de atta}
+\end{figure}
+
+Embedded in the CP are the \is{predicative copula}predicative copula \textsc{pred}, which is there to license predication and is realized as /de/ \citep{bowers:1993:predication, nishiyama:1999:adj}, alongside the \is{dummy copula}dummy copula \textsc{cop}, which offers be-support \citep{doron:1983:verbless, rapoport:1987:copular}, realized as /ar/. Furthermore, the head of I is overtly realized via the past morpheme -\textsc{ta}.\footnote{See Section \ref{copulaelements} for justification of these heads. From now on, I will adopt the respective glosses \textsc{pred} (predicative copula), \textsc{cop} (dummy copula) and \textsc{prs} or \textsc{pst} for the tense morpheme, when the elements \textsc{de-ar-u}, \textsc{d(e)-at-ta} and \textsc{k-at-ta} occur respectively.}
+
+Again, overt tense, in this case past tense, is expressed. This can be evidenced via the impossibility to include a temporal adverb referring to the present, but the possibility of including a temporal adverb referring to past. Compare the minimal pairs in \ref{kakonigeht} to \ref{genzaikakoni} above.
+
+\ex. \label{kakonigeht} \ag. *[\textsubscript{DP} [\textsubscript{CP} Tarō-to Hanako-ga genzai shujinkō-de-at-ta] monogatari]\\
+{} {} Taro-\textsc{com} Hanako-\textsc{nom} at.present main.protagonist-\textsc{pred-cop-pst} story\\
+(`story in which Taro and Hanako are the main protagonists at present’)
+ \bg. [\textsubscript{DP} [\textsubscript{CP} Tarō-to Hanako-ga kakoni shujinkō-de-at-ta] monogatari]\\
+{} {} Taro-\textsc{com} Hanako-\textsc{nom} in.the.past main.protagonist-\textsc{pred-cop-pst} story\\
+`story in which Taro and Hanako were the main protagonists in the past’
+
+On a descriptive level, the overt \is{operator}realization of tense correlates with the absence of the overt realization of \is{MOD@\textsc{mod}}\textsc{mod}. This syntactic head is not realized when tense is overtly expressed. Thus, the question arises whether \textsc{mod} is still present in such circumstances, but somehow blocked from being realized, or whether CPs with an overt tense head are not licensed via \textsc{mod} in the first place.
+
+Although, at the present moment, there is no concrete evidence for either of the two options, I have already mentioned at the beginning of this subsection that I will keep the analysis of \textsc{mod} as a universal syntactic head as consistent as possible. That means, I assume that it is always present structurally. However, it remains silent once the head of I is filled, i.e. once a finite indirect modifier occurs, where finiteness corresponds to the presence of tense and/or agreement (see \citealt[103–108]{landau:2013:control} for an overview as well as \citealt{nikolaeva:2007:intro} and articles cited therein). I leave it to future research to determine at which point its overt output gets deleted, or if it simply never gets realized.\footnote{This point extends to the realization of \textsc{mod} in other languages. See the discussion at the end of this chapter.} \is{finiteness}
+
+
+\begin{figure}[t]
+\fittable{
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=1pt}
+\Tree [.DP\textsubscript{internal} {}
+[.D′\textsubscript{external}
+    [.FP\textsubscript{indirect}
+        [.ModP {}
+            [.Mod′
+                [.CP Op\textsubscript{1}
+                    [.C′
+                        [.IP
+                            [.DP {}
+                                [.D′
+                                    [.FP
+                                        [.F′
+                                            [....
+                                                [.NP \edge[roof]; Tarō-ga ] {}
+                                            ] F
+                                        ]
+                                    ] D
+                                ]
+                            ]
+                            [.I′
+                                [.CopP {}
+                                    [.Cop′
+                                        [.PredP {}
+                                            [.Pred′
+                                                [.NP \edge[roof]; shujinkō ]
+                                                [.Pred de ]
+                                            ]
+                                        ]
+                                        [.Cop at ]
+                                    ]
+                                ]
+                            [.I ta ]
+                            ]
+                        ] {}
+                    ]
+                ] Mod
+            ]
+        ]
+        [.F′\textsubscript{indirect}
+            [.NP \edge[roof]; monogatari\textsubscript{1} ] F
+        ]
+    ] D
+]
+]
+\end{tikzpicture}
+}
+\caption{Full structure of \ref{shujinkodeatta}}
+\label{Full structure shujinkodeatta monogatari}
+\end{figure}
+
+
+The whole DP corresponding to \ref{shujinkodeatta} looks as in Figure \ref{Full structure shujinkodeatta monogatari}. Take note that the subject position and derivation of the \is{operator}operator remain the same.\footnote{There are some noteworthy alternatives, which are also not entirely promising. If we assume a different CP-structure for examples such as \ref{cps}, it is unclear what this different CP should look like. If we argue that \textsc{mod} only selects those CPs which do not select PredP (and/or CopP), then why are verbal relative clauses not followed by \textsc{no}?
+
+\par
+
+Evidence from acquisition is also conflicting. \citet[§ 4 and 5]{murasugi:1991:noun} shows that some Japanese children in her study overgenerated \textsc{no} and also used it after verbal relative clauses, a position not allowed in Standard Japanese. Some even produced it after adjectives either in addition to or instead of \textsc{i} and \textsc{na}. This could be taken as evidence that for those children \textsc{mod} is always present, but they have not learned the rules when to omit it. On the other hand, these results could also be interpreted in a way that the children did not know which CP they are producing and whether they need \textsc{mod} or not. See also \citet[§ 3.5]{yamakido:2005:nature}.}
+
+
+% \begin{figure}
+% \small
+% \begin{forest}
+% [DP\textsubscript{internal}
+%     [~]
+%     [D′\textsubscript{external}
+%         [FP\textsubscript{indirect}
+%             [ModP
+%                 [~]
+%                 [Mod′
+%                     [CP
+%                         [Op\textsubscript{1}]
+%                         [C′
+%                             [IP
+%                                 [DP
+%                                     [~]
+%                                     [D′
+%                                         [FP
+%                                             [F′
+%                                                 […
+%                                                     [NP
+%                                                         [Tarō-ga, roof]
+%                                                     ]
+%                                                     [~]
+%                                                 ]
+%                                                 [F]
+%                                             ]
+%                                         ]
+%                                         [D]
+%                                     ]
+%                                 ]
+%                                 [I′
+%                                     [CopP
+%                                         [~]
+%                                         [Cop′
+%                                             [PredP
+%                                                 [~]
+%                                                 [Pred
+%                                                     [NP
+%                                                         [~]
+%                                                         [N
+%                                                             [shujinkō]
+%                                                         ]
+%                                                     ]
+%                                                     [Pred
+%                                                         [de]
+%                                                     ]
+%                                                 ]
+%                                             ]
+%                                             [Cop
+%                                                 [at]
+%                                             ]
+%                                         ]
+%                                     ]
+%                                     [I
+%                                         [ta]
+%                                     ]
+%                                 ]
+%                             ]
+%                             [~]
+%                         ]
+%                     ]
+%                     [Mod]
+%                 ]
+%             ]
+%             [F′\textsubscript{indirect}
+%                 [NP
+%                     [monogatari\textsubscript{1}, roof]
+%                 ]
+%                 [F]
+%             ]
+%         ]
+%         [D]
+%     ]
+% ]
+% \end{forest}
+% \caption{Full structure of \ref{shujinkodeatta}}
+% \end{figure}
+
+To summarize, potentially all CPs are licensed via \textsc{mod} in attributive position, but \textsc{mod} is only realized when the head of IP remains empty.
+
+\subsubsection{Structures of remaining modifiers} \label{other mod}
+
+The structure for all other modifiers, including \is{numeral}numerals and arguments, which also unequivocally appear with \textsc{no}, can, again, be derived in a straightforward manner. All these modifiers are embedded in the relevant functional projection and selected by \is{MOD@\textsc{mod}}\textsc{mod}, whose head is spelled out as /no/. Their syntactic role is determined in the syntax. This is displayed in examples \ref{internal structure arguments} and \ref{internal structure numerals} and the corresponding trees in \figref{Internal structure arguments tree} and \figref{Internal structure numerals tree}.
+
+\exg. Nihon-no kōgeki\\
+Japan-\textsc{mod} attack\\
+`Japanese attack’ \label{internal structure arguments}
+
+\exg. futari-no gakusei\\
+two-\textsc{mod} student\\
+`two students’  \label{internal structure numerals}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{direct} [.ModP {} [.Mod′ [.NP \edge[roof]; Nihon ] [.Mod no ] ] ] [.F′\textsubscript{direct} [.NP \edge[roof]; kōgeki ] F ] ] D ]]
+\end{tikzpicture}
+\caption{Internal structure of arguments with \textsc{mod} (= \ref{internal structure arguments})}
+\label{Internal structure arguments tree}
+\end{figure}
+
+ \begin{figure}
+\centering
+\begin{tikzpicture}[baseline=0pt, remember picture]
+\tikzset{level distance=25pt, sibling distance=5pt}
+ \Tree [.DP\textsubscript{internal} {} [.D′\textsubscript{internal} [.FP\textsubscript{Num} [.ModP {} [.Mod′ [.NumP \edge[roof]; futari ] [.Mod no ] ] ] [.F′\textsubscript{Num} [.NP \edge[roof]; gakusei ] F ] ] D ]]
+\end{tikzpicture}
+\caption{Internal structure of numerals with \textsc{mod} (= \ref{internal structure numerals})}
+\label{Internal structure numerals tree}
+\end{figure}
+
+For arguments, the additional assumption will be made in Section \ref{RAJapanese} (and see \citealt{laenzlinger:2005:french, laenzlinger:2011:elements} on which this is based) that they have moved from a lower position, assuming the NP of the event noun is actually more complex.
+
+
+\section{Chapter summary and closing remarks}
+
+This chapter presented the DP structure of Japanese and then discussed the internal structure of modifiers. The main insights are that the Japanese DP consists of a DP-external and a DP-internal domain and that the latter encompasses domains for indirect and direct modification. In the cartographic spirit, I claim that the DP structure presented in this study is universal. In other words, we need to assume a left periphery alongside a direct and an indirect domain in every language. An important deviation from other theories \citep{cinque:2010:adj, cinque:2020:relcl, scott:2002:stacked, laenzlinger:2005:french, laenzlinger:2011:elements, kim:2019:syntax} is that I have proposed that these domains do not encompass functional projections dedicated to specific semantic categories, in the direct domain, or relative clauses of different sizes, in the indirect domain. As further argued in Section \ref{discussiondirect}, this is due to cross-linguistic parametric variation. Furthermore, I spent some time discussing the left periphery and essentially suggested that we should cross-linguistically assume projections for quantifiers and focused modifiers, as well as unspecified projections. An intriguing question also concerns the nature and universality of FocP as the interaction of modifiers and focus in Japanese proves rather difficult. Furthermore, this area is subject to heavy language variation.
+
+In the second part of this chapter, I put forth an analysis of the monomoraic elements co-occurring with Japanese non-verbal modifiers as a syntactic head. This head can select all kinds of lexical and functional elements, irrespective of word class and modification type -- direct, indirect, numeral, etc. -- and license them as attributive modifiers. Thus what is merged in the relevant projections is not a simple modifier, but a modifier selected by \textsc{mod}. I first put forth this analysis for the element \textsc{no} and then extended it to \textsc{i} and \textsc{na}. Problematic aspects for future research concern the fact that it is not realized once the head of IP is overt, as it needs to be shown whether other languages show a similar correlation between the realization of tense and of such a functional head, and the application to the Japanese adjective groups where we end up with two different elements spelled out as /i/.
+
+The assumption of a universal functional head \textsc{mod} offers a novel theory on the internal structure of modifiers and enriches our understanding of the DP further. This echoes a recent contribution of \citet{richards:2023:finding} on the category of \textit{linkers} (see also \citealt{richards:1997:comp, richards:2010:uttering, baker:2006:linkers}), but necessarily begs the question if such a head should really be assumed even for languages such as English, where outside genitive-\textit{of} no such element appears in the DP on the surface. I will answer this question affirmatively, but at the same time would like to point out the necessity of future research.
+
+
